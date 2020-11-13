@@ -1,0 +1,478 @@
+@media screen and (min-width:320px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  /* =================================
+HOME
+===================================*/
+
+  /*============= menu burger ===========*/
+
+  #hamburger-button {
+    position: absolute;
+    z-index: 9999;
+    display: inline-block;
+    vertical-align: top;
+    height: 30px;
+    width: 30px;
+    right: 5%;
+    margin-top: 25px;
+    cursor: pointer;
+  }
+
+  #hamburger-button > span {
+    display: block;
+    height: 4px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    width: 30px;
+    background-color: #5CF6C3;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -ms-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    transition-duration: 0.4s;
+  }
+
+  #hamburger-button.open > span:first-child {
+    -webkit-transform: translateY(9px) rotate(45deg);
+    -moz-transform: translateY(9px) rotate(45deg);
+    -ms-transform: translateY(9px) rotate(45deg);
+    -o-transform: translateY(9px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  #hamburger-button.open > span:nth-child(2) {
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+
+  #hamburger-button.open > span:last-child {
+    -webkit-transform: translateY(-9px) rotate(-45deg);
+    -moz-transform: translateY(-9px) rotate(-45deg);
+    -ms-transform: translateY(-9px) rotate(-45deg);
+    -o-transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .navbar {
+    position: fixed;
+    z-index: 888;
+    height: 100%;
+    width: 100%;
+    right: -100%;
+    transition: 0.4s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -ms-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    background-color: #181818;
+    color: #5CF6C3;
+  }
+
+  .navbar.open {
+    right: 0;
+    opacity: 1;
+  }
+
+
+  .navbar ul {
+    list-style: none;
+    font-size: 1.5em;
+    margin-top: -15%;
+  }
+
+  .navbar ul li {
+    margin-bottom: 10px;
+    padding: 10px 0;
+    text-align: left;
+    z-index: 999;
+  }
+
+  .iso,
+  .iso::after {
+    transform: scaleX(0.866) skewY(-30deg);
+    transform-origin: 100% 100%;
+  }
+
+  hr {
+    margin-top: .5em;
+    margin-bottom: .5em;
+
+  }
+
+  .underline {
+    border: solid 0.1em;
+    margin-right: 80%;
+  }
+
+  /*============= home ===========*/
+
+  .mobile-lines {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -10;
+  }
+
+  .home_title {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .home-name {
+    margin-top: 5px;
+  }
+
+  .bottom-name {
+    font-size: .7em;
+  }
+
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+  }
+
+  .radio_button {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    z-index: 250;
+  }
+
+  /* =================================
+ABOUT
+===================================*/
+
+  #console {
+    display: none;
+  }
+
+  #consolequeries {
+    position: absolute;
+    bottom: 80px;
+    left: 10%;
+    padding-right: 60px;
+    max-width: 500px;
+    line-height: 30px;
+    max-height: 400px;
+  }
+
+  .text {
+    font-size: .8em;
+    line-height: 27px;
+  }
+
+  .link {
+    font-size: 1em;
+    line-height: 27px;
+  }
+
+
+  /* =================================
+CONTACT
+===================================*/
+
+  .green_lines {
+    z-index: 42;
+  }
+
+  .contact_link {
+    z-index: 54;
+    position: absolute;
+    filter: drop-shadow(0px 2px 15px rgba(196, 196, 196, 0.5));
+    transform: rotate(-4.11deg);
+  }
+
+  .contact-mail {
+    left: 30%;
+    top: 28%;
+  }
+
+  .contact-github {
+    left: 46%;
+    top: 47%;
+  }
+
+  .contact-linkedin {
+    left: 2%;
+    top: 56%;
+  }
+
+  /* =================================
+WORK
+===================================*/
+
+/* ============ lines animation ============*/
+  
+  .green_lines-animation > span {
+    margin-bottom: 18px;
+  }
+
+  .green_lines-animation > span {
+    display: block;
+    background-color: #23D198;
+    height: 1px;
+    width: 100%;
+    transform: rotate(20deg);
+    animation: rotate 1.5s ease-in-out forwards;
+    -webkit-animation: rotate 1.5s forwards ease-in-out;
+    -ms-animation: rotate 1.5s forwards ease-in-out;
+    -moz-animation: rotate 1.5s forwards ease-in-out;
+    -o-animation: rotate 1.5s forwards ease-in-out;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(20deg);
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+      margin-bottom: 51px;
+    }
+
+    100% {
+      transform: rotate(0deg);
+      margin-bottom: 25px;
+    }
+  }
+
+  @-webkit-keyframes rotate {
+    0% {
+      transform: rotate(20deg);
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+      margin-bottom: 51px;
+    }
+
+    100% {
+      transform: rotate(0deg);
+      margin-bottom: 25px;
+    }
+  }
+
+  @-ms-keyframes rotate {
+    0% {
+      transform: rotate(20deg);
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+      margin-bottom: 51px;
+    }
+
+    100% {
+      transform: rotate(0deg);
+      margin-bottom: 25px;
+    }
+  }
+
+  @-moz-keyframes rotate {
+    0% {
+      transform: rotate(20deg);
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+      margin-bottom: 51px;
+    }
+
+    100% {
+      transform: rotate(0deg);
+      margin-bottom: 25px;
+    }
+  }
+
+  @-o-keyframes rotate {
+    0% {
+      transform: rotate(20deg);
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+      margin-bottom: 51px;
+    }
+
+    100% {
+      transform: rotate(0deg);
+      margin-bottom: 25px;
+    }
+  }
+
+  .green_lines-animation {
+    position: absolute;
+    top: 20%;
+    z-index: 0;
+  }
+  
+  .green_lines-animation > span.empty {
+    animation: empty 1.5s ease-in-out forwards;
+    -webkit-animation: empty 1.5s forwards ease-in-out;
+    -ms-animation: empty 1.5s forwards ease-in-out;
+    -moz-animation: empty 1.5s forwards ease-in-out;
+    -o-animation: empty 1.5s forwards ease-in-out;
+  }
+
+  @keyframes empty {
+    0% {
+      transform: rotate(20deg);
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+      margin-bottom: 80px;
+    }
+
+    100% {
+      transform: rotate(0deg);
+      margin-bottom: 70px;
+    }
+  }
+  
+    .last-line {
+    margin-bottom: 25px;
+    padding-left: 10px;
+  }
+
+  /* ============ project title animation ============*/
+  
+  .title-project {
+    font-size: .7em;
+    line-height: 17px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+  }
+
+  .title_project_animation{
+opacity: 0;
+    animation: opacity .5s ease forwards;
+    -webkit-animation: opacity .5s forwards ease;
+    -ms-animation: opacity .5s forwards ease;
+    -moz-animation: opacity .5s forwards ease;
+    -o-animation: opacity .5s forwards ease;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+  }
+  
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .button-work {
+    position: absolute;
+    bottom: 10px;
+    display: none;
+  }
+
+  .green_lines_footer {
+    margin-bottom: 20px;
+  }
+
+  /* ============ project page ============*/
+
+  .main_pic_project{
+    width: 70%;
+    position: relative;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .title_page_project{
+    margin: 140px 0 5px 0;
+    
+  }
+
+  .project_text{
+    padding-right: 50px;
+    margin-left: 20px;
+  }
+
+  .caption{
+    margin-left: 20px;
+    font-size: .8em;
+    margin-top: 5px;
+  }
+
+  .link_project{
+    margin: 30px 0 50px 20px;
+  }
+
+  .mockup{
+    width: 80%;
+    margin-bottom: 60px;
+    position: relative;
+    filter: drop-shadow(0px 2px 15px rgba(3, 3, 3, 0.5));
+  }
+
+  .back_project{
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
+
+
+
+
+
+@media screen and (min-width:1220px) {}

@@ -1,0 +1,203 @@
+html{
+    height: 100%;
+}
+body{
+    overflow: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+.wrapper{
+    overflow: scroll;
+}
+/* ==================================
+BACKGROUND STYLE
+=====================================*/
+.whitebg{
+    background-color: #FFFFFF;
+    color: #464646;
+}
+
+.blackbg{
+    background-color: #181818;
+    color: #FFFFFF;
+}
+
+/* ==================================
+TEXT STYLE
+=====================================*/
+.desktop-menu{
+    color: #5CF6C3;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.text{
+    font-family: 'Noto Sans HK', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+#menu a, #burger a{
+    text-decoration: none;
+    color: #5CF6C3;
+}
+
+.link{
+    font-family: 'Noto Sans HK', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #5CF6C3;
+}
+
+.title-project{
+    font-family: 'Noto Sans HK', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.145em;
+    text-transform: uppercase;
+    transition: color .3s ease;
+}
+
+.personnal-project{
+    color: #6B6B6B;
+}
+
+.title-project:hover{
+    color: #5CF6C3;
+}
+
+.caption{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    color: #636363;
+}
+
+h1{
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #CECECE;
+    transform: matrix(0.71, 0.34, -1.12, 0.62, 0, -83);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+/* ==================================
+SECTION
+=====================================*/
+.button{
+    position: fixed;
+}
+
+.bottom-name{
+    width: 100%;
+    bottom: 20px;
+    text-align: center;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: none;
+    color: #CECECE;
+}
+
+#contact{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #5CF6C3;
+    top: -100%;
+}
+
+#contact.open{top: 0;}
+
+#about{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #181818;
+    left: -100%;
+    top: 0;
+}
+
+#console{
+    position: absolute;
+    bottom: 80px;
+    left: 10%;
+    padding-right: 100px;
+    max-width: 700px;
+    line-height: 40px;
+    font-family: 'cutive mono';
+    font-size: 1.5em;
+}
+
+.cursor {
+    background: #5CF6C3;
+    animation: blink 1s linear infinite;
+    -webkit-animation: blink 1s infinite linear;
+    -ms-animation: blink 1s infinite linear;
+    -moz-animation: blink 1s infinite linear;
+    -o-animation: blink 1s infinite linear;
+    -webkit-box-shadow: 0 0 5px rgba(0,100,0,40);
+    -moz-box-shadow: 0 0 5px rgba(0,100,0,40);
+    -ms-box-shadow: 0 0 5px rgba(0,100,0,40);
+    -o-box-shadow: 0 0 5px rgba(0,100,0,40);
+    box-shadow: 0 0 5px rgba(0,100,0,40);
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    25% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes blink {0% { opacity: 1; }25% { opacity: 0; }50% { opacity: 0; }100% { opacity: 1; }}
+@-ms-keyframes blink {0% { opacity: 1; }25% { opacity: 0; }50% { opacity: 0; }100% { opacity: 1; }}
+@-moz-keyframes blink {0% { opacity: 1; }25% { opacity: 0; }50% { opacity: 0; }100% { opacity: 1; }}
+@-o-keyframes blink {0% { opacity: 1; }25% { opacity: 0; }50% { opacity: 0; }100% { opacity: 1; }}
+
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 20px;
+}
+
+.anim {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap, .wrapp{
+    flex-flow: row wrap;
+}
+
+.anim .card {
+    opacity: 0;
+    transform: translate3d(0, 70%, 0);
+    transition: all 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.card.active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
