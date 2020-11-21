@@ -1,6 +1,16 @@
-@media screen and (min-width:320px) {
-  #desktop-nav {
+/* =================================
+MOBILE 320PX
+===================================*/
+
+@media screen and (min-width:120px) {
+
+  .desktop-menu,
+  .desktop-lines, .logo_desktop, .pic_project, .scroll {
     display: none;
+  }
+  
+  .mobile-lines{
+    display: block;
   }
 
   /* =================================
@@ -122,6 +132,10 @@ HOME
     z-index: -10;
   }
 
+  .lines {
+    width: 100%;
+  }
+
   .home_title {
     position: absolute;
     top: 25%;
@@ -130,7 +144,9 @@ HOME
   }
 
   .home-name {
-    margin-top: 5px;
+    margin-top: 22px;
+    width: 250px;
+    transform: rotate(-3.4deg);
   }
 
   .bottom-name {
@@ -150,6 +166,7 @@ HOME
     top: 25px;
     left: 20px;
     z-index: 250;
+    width: 30px;
   }
 
   /* =================================
@@ -199,31 +216,34 @@ CONTACT
   .contact-mail {
     left: 30%;
     top: 28%;
+    width: 40%;
   }
 
   .contact-github {
     left: 46%;
     top: 47%;
+    width: 50%;
   }
 
   .contact-linkedin {
     left: 2%;
     top: 56%;
+    width: 60%;
   }
 
   /* =================================
 WORK
 ===================================*/
 
-/* ============ lines animation ============*/
-  
+  /* ============ lines animation ============*/
+
   .green_lines-animation > span {
     margin-bottom: 18px;
   }
 
   .green_lines-animation > span {
     display: block;
-    background-color: #23D198;
+    background-color: #53756A;
     height: 1px;
     width: 100%;
     transform: rotate(20deg);
@@ -339,7 +359,7 @@ WORK
     top: 20%;
     z-index: 0;
   }
-  
+
   .green_lines-animation > span.empty {
     animation: empty 1.5s ease-in-out forwards;
     -webkit-animation: empty 1.5s forwards ease-in-out;
@@ -367,14 +387,14 @@ WORK
       margin-bottom: 70px;
     }
   }
-  
-    .last-line {
+
+  .last-line {
     margin-bottom: 25px;
     padding-left: 10px;
   }
 
   /* ============ project title animation ============*/
-  
+
   .title-project {
     font-size: .7em;
     line-height: 17px;
@@ -382,8 +402,8 @@ WORK
     padding-left: 20px;
   }
 
-  .title_project_animation{
-opacity: 0;
+  .title_project_animation {
+    opacity: 0;
     animation: opacity .5s ease forwards;
     -webkit-animation: opacity .5s forwards ease;
     -ms-animation: opacity .5s forwards ease;
@@ -395,7 +415,7 @@ opacity: 0;
     -moz-animation-delay: 1s;
     -o-animation-delay: 1s;
   }
-  
+
   @keyframes opacity {
     0% {
       opacity: 0;
@@ -418,7 +438,7 @@ opacity: 0;
 
   /* ============ project page ============*/
 
-  .main_pic_project{
+  .main_pic_project {
     width: 70%;
     position: relative;
     top: 20vh;
@@ -426,53 +446,1217 @@ opacity: 0;
     transform: translateX(-50%);
   }
 
-  .title_page_project{
-    margin: 140px 0 5px 0;
-    
+  .title_page_project {
+    margin: 140px 0 5px 10px;
+
   }
 
-  .project_text{
+  .project_text {
     padding-right: 50px;
-    margin-left: 20px;
+    margin-left: 30px;
+    max-width: 400px;
   }
 
-  .caption{
-    margin-left: 20px;
+  .caption {
+    margin-left: 30px;
     font-size: .8em;
     margin-top: 5px;
   }
 
-  .link_project{
-    margin: 30px 0 50px 20px;
+  .link_project {
+    margin: 30px 0 50px 30px;
   }
 
-  .mockup{
+  .mockup {
     width: 80%;
     margin-bottom: 60px;
     position: relative;
     filter: drop-shadow(0px 2px 15px rgba(3, 3, 3, 0.5));
   }
 
-  .back_project{
-    position: absolute;
+  .back_project {
+    position: relative;
     bottom: 15px;
     width: 100%;
-    text-align: center;
     padding: 0;
+    font-weight: 300;
+    display: block;
   }
   
+  .next-project{
+    text-align: right;
+  }
   
+    .prev-project{
+    text-align: left;
+  }
   
+  .thin{
+    font-size: .6em;
+    color: #636363;
+  }
   
+  .nav_project{
+    padding: 0 20px;
+    display: flex;
+  }
   
-  
-  
-  
-  
+  .print_margin{
+    margin-bottom: 50px;
+  }
+
+}
+
+/* =================================
+MOBILE 360PX
+===================================*/
+
+@media screen and (min-width:360px) {
+  .home-name {
+    margin-top: 25px;
+  }
+
+  h1 {
+    transform: matrix(0.71, 0.34, -1.12, 0.62, 0, -50);
+  }
+}
+
+/* =================================
+MOBILE 375PX
+===================================*/
+
+@media screen and (min-width:375px) {
+  .home-name {
+    margin-top: 30px;
+  }
+
+  h1 {
+    transform: matrix(0.71, 0.34, -1.12, 0.62, 0, -47);
+  }
+
+  .title-project {
+    padding-left: 30px;
+  }
+
+  .back_project {
+    padding: 0;
+  }
+
+  .project_text,
+  .caption {
+    margin-left: 40px;
+  }
+}
+
+/* =================================
+MOBILE 411PX
+===================================*/
+
+@media screen and (min-width:411px) {
+  .home_title {
+    top: 28%;
+  }
+
+  .home-name {
+    margin-top: 23px;
+    width: 340px;
+    transform: rotate(-4deg);
+  }
+
+  h1 {
+    transform: matrix(0.71, 0.34, -1.12, 0.62, 0, -64);
+    font-size: 1.5em;
+  }
+
+  .text {
+    font-size: 1em;
+    line-height: 32px;
+  }
+
+  .bottom-name {
+    font-size: .8em;
+  }
+
+  .logo {
+    width: 40px;
+  }
+
+  .navbar ul {
+    font-size: 1.9em;
+    margin-top: 5%;
+  }
+
+  #consolequeries {
+    bottom: 100px;
+  }
+
+  .title-project {
+    font-size: .8em;
+  }
+
+  .caption {
+    font-size: 1em;
+  }
+}
+
+/* =================================
+MOBILE 480PX
+===================================*/
+
+@media screen and (min-width:480px) {
+  .home-name {
+    width: 400px;
+  }
+
+  h1 {
+    font-size: 1.9em;
+    transform: matrix(0.71, 0.34, -1.12, 0.62, 0, -75);
+  }
+
+  .navbar ul {
+    font-size: 2.5em;
+  }
+
+  .navbar ul li {
+    padding: 15px 0;
+  }
+
+  .radio_button {
+    width: 40px;
+  }
+
+  .text {
+    font-size: 1.1em;
+    line-height: 38px;
+  }
+
+  .title-project {
+    font-size: 1em;
+  }
+
+  .title_page_project {
+    margin: 200px 0 5px 10px;
+  }
+
+  .main_pic_project {
+    width: 90%;
+  }
+
+  .caption {
+    font-size: 1.1em;
+    margin-top: 10px;
+  }
+
+  .last_mockup {
+    margin-bottom: 100px;
+  }
+
+  .back_project {
+    bottom: 30px;
+  }
+
+  .nav_project{
+    padding: 0 30px;
+  }
 }
 
 
+/* =================================
+TABLETTE 540PX
+===================================*/
 
+@media screen and (min-width:540px) {
 
+  .lines {
+    margin-top: -100px;
+  }
 
-@media screen and (min-width:1220px) {}
+  .home-name {
+    margin-top: 12px;
+  }
+
+  h1 {
+    transform: matrix(0.71, 0.34, -1.12, 0.62, 0, -68);
+  }
+
+  .navbar ul {
+    margin-top: -10%;
+  }
+
+  /* =============== contact ==============*/
+
+  .contact-mail {
+    width: 30%;
+    left: 31%;
+    top: 30%;
+  }
+
+  .contact-github {
+    width: 35%;
+    left: 48%;
+    top: 52%;
+  }
+
+  .contact-linkedin {
+    width: 45%;
+    top: 59%;
+    left: 3%;
+  }
+
+}
+
+/* =================================
+TABLETTE 768PX
+===================================*/
+
+@media screen and (min-width:768px) {
+  /* ============ home ============ */
+
+  #hamburger-button {
+    width: 50px;
+    height: 50px;
+    margin-top: 35px;
+  }
+
+  #hamburger-button > span {
+    width: 50px;
+    height: 5px;
+    margin-bottom: 10px;
+  }
+
+  .radio_button {
+    left: 40px;
+    top: 35px;
+  }
+
+  .home-name {
+    width: 600px;
+    margin-top: 7px;
+  }
+
+  h1 {
+    font-size: 2.7em;
+    transform: matrix(0.71, 0.34, -1.12, 0.62, 0, -104);
+  }
+
+  .bottom-name {
+    font-size: 1.1em;
+  }
+
+  #hamburger-button.open > span:first-child {
+    transform: translateY(15px) rotate(45deg);
+  }
+
+  #hamburger-button.open > span:last-child {
+    transform: translateY(-15px) rotate(-45deg)
+  }
+
+  .navbar ul {
+    font-size: 3em;
+  }
+
+  .navbar ul li {
+    padding: 25px 0;
+  }
+
+  .logo {
+    width: 65px;
+    top: 25px;
+  }
+
+  .radio_button {
+    width: 50px;
+  }
+
+  /* ============ about ============ */
+
+  .text {
+    font-size: 1.5em;
+    line-height: 50px;
+  }
+
+  #consolequeries {
+    bottom: 140px;
+  }
+
+  /* ============ work ============ */
+
+  .title-project {
+    font-size: 1.3em;
+    padding-left: 40px;
+    margin-bottom: 40px;
+  }
+
+  .last-line {
+    padding-left: 40px;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(20deg);
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+      margin-bottom: 61px;
+    }
+
+    100% {
+      transform: rotate(0deg);
+      margin-bottom: 40px;
+    }
+  }
+
+  @keyframes empty {
+    0% {
+      transform: rotate(20deg);
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+      margin-bottom: 100px;
+    }
+
+    100% {
+      transform: rotate(0deg);
+      margin-bottom: 90px;
+    }
+  }
+
+  .main_pic_project {
+    width: 80%;
+  }
+
+  .title_page_project {
+    margin: 200px 0 10px 20px;
+  }
+
+  .project_text,
+  .caption {
+    margin-left: 60px;
+    max-width: 600px;
+  }
+
+  .caption {
+    font-size: 1.5em;
+  }
+
+  .back_project {
+    padding: 0;
+  }
+
+  .last_mockup {
+    margin-bottom: 140px;
+  }
+  
+    .back_project p{
+    margin: 8px 0;
+  }
+  
+  .thin{
+    font-size: .8em;
+  }
+
+}
+
+/* =================================
+TABLETTE 1024PX
+===================================*/
+
+@media screen and (min-width:1024px) {
+
+   #burger,
+  .logo {
+    display: none;
+  }
+  
+  .desktop-menu, .logo_desktop, .mobile-lines{
+    display: block;
+  }
+
+  /* =============== home ==============*/
+
+  .home_title {
+    top: 31%;
+  }
+
+  .home-name {
+    width: 600px;
+    margin-top: 30px;
+  }
+
+  h1 {
+    font-size: 3em;
+    transform: matrix(0.71, 0.34, -1.12, 0.62, 0, -82);
+  }
+
+  .lines {
+    margin-top: -200px;
+  }
+
+  .bottom-name {
+    font-size: 1.4em;
+    bottom: 30px;
+  }
+
+  .navbar ul {
+    font-size: 4.3em;
+  }
+
+  .navbar ul li {
+    padding: 35px 0;
+  }
+
+  .logo_desktop{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    z-index: 400;
+  }
+  
+  /* =============== about ==============*/
+
+  .text {
+    font-size: 1.4em;
+    line-height: 50px;
+  }
+
+  #consolequeries {
+    max-width: 650px;
+    bottom: 230px;
+  }
+
+  /* =============== contact ==============*/
+
+  .contact-mail {
+    width: 27%;
+    left: 32%;
+  }
+
+  .contact-github {
+    width: 31%;
+    left: 49%;
+  }
+
+  .contact-linkedin {
+    width: 39%;
+  }
+
+  /* =============== work ==============*/
+
+  .title-project {
+    font-size: 1.5em;
+    padding-left: 120px;
+    margin-bottom: 60px;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(20deg);
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+      margin-bottom: 81px;
+    }
+
+    100% {
+      transform: rotate(0deg);
+      margin-bottom: 60px;
+    }
+  }
+
+  @keyframes empty {
+    0% {
+      transform: rotate(20deg);
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+      margin-bottom: 140px;
+    }
+
+    100% {
+      transform: rotate(0deg);
+      margin-bottom: 130px;
+    }
+  }
+
+  .title_page_project {
+    margin: 300px 0 20px 0;
+  }
+
+  .project_text,
+  .caption {
+    margin-left: 120px;
+    max-width: 700px;
+  }
+
+  .caption {
+    font-size: 1.8em;
+  }
+
+  .back_project {
+    padding: 0;
+  }
+
+  .main_pic_project{
+    width: 75%;
+  }
+  
+  .back_project p{
+    margin: 15px 0;
+    font-size: .8em;
+  }
+  
+  .nav_project{
+    padding: 0 50px;
+  }
+
+}
+
+/* =================================
+DESKTOP 1100PX
+===================================*/
+
+@media screen and (min-width:1100px) {
+
+  /* =============== home ==============*/
+  .mobile-lines, #burger,
+  .logo, #consolequeries {
+    display: none;
+  }
+  
+  .desktop-lines, .desktop-menu, .logo_desktop, #console, .pic_project, .scroll {
+    display: block;
+  }
+
+  .desktop-lines{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  .bg-lines-desktop, .bg-lines-desktop-green {
+    width: 100%;
+  }
+
+  
+  .radio_button{
+    right: 40px;
+    left: inherit;
+    width: 40px;
+  }
+  
+  .home-name{
+    width: 450px;
+    transform: rotate(-6deg);
+    margin-top: 20px;
+  }
+  
+  .bottom-name{
+    font-size: .8em;
+  }
+
+  h1{
+    font-size: 2em;
+    transform: matrix(0.78, 0.34, -1.12, 0.62, 0, -82);
+  }
+  
+  .logo_desktop{
+    position: relative;
+    top: 150px;
+    left: 70%;
+    width: 5%;
+    z-index: 400;
+  }
+  
+  .text{
+    font-size: 1.2em;
+    line-height: 40px;
+  }
+  
+  .caption {
+    font-size: 1.2em;
+  }
+  
+  /* =============== contact ==============*/
+
+  .contact_link{
+    transform: rotate(-6deg);
+  }
+  
+  .contact-mail{
+    width: 18%;
+    left: 40%;
+    top: 25%;
+  }
+  
+  .contact-github{
+    width: 21%;
+  }
+  
+  .contact-linkedin{
+    width: 28%;
+    left: 10%;
+    top: 41%;
+  }
+  
+  /* =============== work ==============*/
+  .green_lines-animation{
+    top: 20%;
+  }
+  
+  .title_project_animation{
+    display: inline-block;
+  }
+  
+  .title-project{
+    font-size: 1.1em;
+    padding-left: 150px;
+    margin-bottom : 40px;
+  }
+  
+  .title_page_project{
+    margin: 300px 0 20px -50px;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(20deg);
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+      margin-bottom: 61px;
+    }
+
+    100% {
+      transform: rotate(0deg);
+      margin-bottom: 40px;
+    }
+  }
+
+  @keyframes empty {
+    0% {
+      transform: rotate(20deg);
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+      margin-bottom: 110px;
+    }
+
+    100% {
+      transform: rotate(0deg);
+      margin-bottom: 100px;
+    }
+  }
+  
+  .last-line{
+    padding-left: 150px;
+  }
+  
+  .pic_project{
+    position: absolute;
+    width: 40%;
+    margin-top: -180px;
+    z-index: 333;
+    left: 50%;
+    opacity: 0;
+    cursor: default;
+    transition: all .3s ease;
+  }
+  
+.title_project_animation:hover ~ .pic_project{
+    opacity: 1;
+  }
+  
+  .main_pic_project{
+    width: 40%;
+    left: 70%;
+    top: 25vh;
+  }
+
+  .project_text, .caption{
+    margin-left: 100px;
+  }
+  
+  .presentation{
+    position: relative;
+    max-width: 600px;
+    left: 50px;
+    top: -400px;
+  }
+  
+  .last_mockup{
+    margin-bottom: 60px;
+  }
+  
+  .anim{
+    top: -180px;
+  }
+  
+  .anim .card.midd{
+    width: 45%;
+}
+  
+  .back_project{
+    padding: 0;
+    font-size: .8em;
+  }
+  
+  .back_project p{
+    margin: 3px 0;
+  }
+  
+  .scroll{
+    position: absolute;
+    left: 50%;
+    top: 88vh;
+    transform: translateX(-50%);
+  }
+  
+  .scroll img{
+    width: 40px;
+  }
+  
+  .opacity{
+    opacity: 0;
+  }
+}
+
+/* =================================
+DESKTOP 1600PX
+===================================*/
+
+@media screen and (min-width:1600px) {
+  .button{
+    font-size: 3em;
+  }
+  
+  #contact-button{
+    top: 30px;
+  }
+  
+  #console{
+    bottom: 150px;
+  }
+  
+  .bottom-name{
+    font-size: 1.2em;
+  }
+  
+  .title-project{
+    font-size: 1.4em;
+    padding-left: 150px;
+  }
+  
+  .title_page_project{
+    margin: 300px 0 20px 0;
+  }
+  
+  .text{
+    font-size: 1.4em;
+    line-height: 40px;
+  }
+  
+  .caption{
+    font-size: 1.4em;
+  }
+  
+  .last-line{
+    padding-left: 150px;
+  }
+  
+  .project_text, .caption{
+    margin-left: 150px;
+  }
+  
+  .presentation{
+    max-width: 700px;
+    top: -400px;
+  }
+  
+  .back_project{
+    padding: 0;
+    font-size: 1.1em;
+  }
+  
+    .back_project p{
+    margin: 10px 0;
+  }
+  
+  .nav_project{
+    padding: 0 80px;
+  }
+}
+
+/* =================================
+DESKTOP 2500PX
+===================================*/
+
+@media screen and (min-width:2500px) {
+  .button{
+    font-size: 4.4em;
+  }
+  
+    #contact-button{
+    top: 40px;
+  }
+  
+  .home-name{
+    width: 850px;
+  }
+  
+  h1{
+    font-size: 3.5em;
+transform: matrix(0.78, 0.34, -1.12, 0.62, 30, -146);
+  }
+  
+  .bottom-name{
+    font-size: 1.8em;
+  }
+  
+  .text{
+    font-size: 2em;
+    line-height: 60px;
+  }
+  
+  .caption{
+    font-size: 2em;
+  }
+  
+  .title-project{
+    font-size: 1.8em;
+    padding-left: 200px;
+  }
+  
+  .last-line{
+    margin-bottom: 40px;
+    padding-left: 200px;
+  }
+  
+  .project_text, .caption{
+    margin-left: 200px;
+  }
+  
+  .presentation{
+    max-width: 850px;
+    top: -500px;
+    left: 150px;
+  }
+  
+  .scroll img{
+    width: 60px;
+  }
+  
+  .back_project{
+    padding: 0;
+  }
+  
+   .back_project p{
+    margin: 15px 0;
+     font-size: .8em;
+  }
+  
+  .nav_project{
+    padding: 0 100px;
+  }
+  
+  .radio_button{
+    width: 60px;
+  }
+}
+
+/* =================================
+DESKTOP 4000PX
+===================================*/
+
+@media screen and (min-width:4000px) {
+  .button{
+    font-size: 6.4em;
+  }
+  
+  #contact-button{
+    top: 60px;
+  }
+  
+  .home-name{
+    width: 1400px;
+  }
+  
+  h1{
+    font-size: 5.5em;
+    transform: matrix(0.78, 0.34, -1.12, 0.62, 30, -250);
+  }
+  
+  .bottom-name{
+    font-size: 3em;
+  }
+  
+  .radio_button{
+    width: 90px;
+    right: 60px;
+    top: 60px;
+  }
+  
+  #console{
+    bottom: 300px;
+    max-width: 1400px;
+  }
+  
+  .text{
+    font-size: 3.3em;
+    line-height: 100px;
+  }
+  
+  .title-project{
+    font-size: 3em;
+    padding-left: 300px;
+    margin-bottom: 100px;
+  }
+  
+  .title_page_project{
+    margin-bottom: 50px;
+  }
+  
+  .last-line{
+    padding-left: 300px;
+  }
+  
+   @keyframes rotate {
+    0% {
+      transform: rotate(20deg);
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+      margin-bottom: 121px;
+    }
+
+    100% {
+      transform: rotate(0deg);
+      margin-bottom: 100px;
+    }
+  }
+
+  @keyframes empty {
+    0% {
+      transform: rotate(20deg);
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+      margin-bottom: 200px;
+    }
+
+    100% {
+      transform: rotate(0deg);
+      margin-bottom: 190px;
+    }
+  }
+  
+  .presentation{
+    max-width: 1400px;
+    top: -700px;
+  }
+  
+  .project_text, .caption{
+    margin-left: 300px;
+    max-width: 1400px;
+  }
+  
+  .caption{
+    font-size: 4em;
+  }
+  
+  .scroll img{
+    width: 120px;
+  }
+  
+  .mockup{
+    margin-bottom: 120px;
+  }
+  
+  .back_project{
+    padding: 0;
+  }
+  
+     .back_project p{
+    margin: 35px 0;
+  }
+}
+
+/* =================================
+MOBILE 320PX LANDSCAPE
+===================================*/
+
+@media screen and (min-width:120px) and (max-height:520px) and (orientation: landscape) {
+ 
+  /* ======================= home ==============*/
+  .mobile-lines{
+    height: 100%;
+  }
+  
+  .lines{
+    height: 150%;
+    width: 120%;
+  }
+  
+  .radio_button{
+    width: 30px;
+  }
+  
+  .home-name{
+    width: 300px;
+    transform: rotate(-19deg);
+  }
+  
+  .home_title{
+    top: 22%;
+  }
+  
+  h1{
+    font-size: .8em;
+   transform: matrix(1.8, 0.34, -1.12, 0.92, 120, -40);
+  }
+  
+  .bottom-name{
+    font-size: .6em;
+    bottom: 20px;
+  }
+  
+  .navbar ul{
+    font-size: 1.5em;
+    margin-top: -50%;
+  }
+  
+  .navbar ul li{
+    padding: 5px 0;
+  }
+  
+  hr{
+    margin-top: .2em;
+    margin-bottom: .2em;
+  }
+  
+  /* ======================= about ==============*/
+  
+  .text{
+    font-size: .8em;
+    line-height: 28px;
+  }
+  
+  #consolequeries{
+    bottom: 40px;
+  }
+  
+  /* ======================= contact ==============*/
+  
+  .contact_link{
+    transform: rotate(-19deg);
+  }
+  
+  .contact-mail{
+    width: 20%;
+    left: 38%;
+    top: 20%;
+  }
+  
+  .contact-github{
+    width: 25%;
+    left: 56%;
+    top: 42%;
+  }
+  
+  .contact-linkedin{
+    width: 30%;
+    top: 49%;
+    left: 2%;
+  }
+  
+  /* ======================= work ==============*/
+  
+  .main_pic_project{
+    width: 70%;
+    top: 35vh;
+  }
+  
+  .back_project p{
+    font-size: .6em;
+  }
+}
+
+/* =================================
+MOBILE 700PX LANDSCAPE
+===================================*/
+
+@media screen and (min-width:700px) and (max-height:520px) and (orientation: landscape) {
+  .navbar ul{
+    margin-top: -45%;
+  }
+  
+  .logo{
+    width: 45px;
+  }
+  
+  .caption{
+    font-size: 1em;
+  }
+  
+}
+
+/* =================================
+TABLETTE 1024PX LANDSCAPE
+===================================*/
+
+@media screen and (min-width:1000px) and (max-height:768px) and (orientation: landscape) {
+    .back_project p{
+    font-size: .6em;
+  }
+  
+  .text{
+    font-size: 1.2em;
+    line-height: 40px;
+  }
+  
+  .bottom-name{
+    font-size: 1em;
+  }
+}

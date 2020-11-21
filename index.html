@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="noscroll">
 
 <head>
     <meta charset="UTF-8">
@@ -43,7 +43,7 @@ MOBILE NAV
 ================================= -->
     <div id="burger">
         <div class="navbar">
-            <ul class="desktop-menu iso">
+            <ul class="mobile-menu iso">
                 <li ><a id="burger-home" href="index.html">HOME</a></li>
                 <hr class="underline">
                 <li ><a id="burger-works" href="work.html">WORKS</a></li>
@@ -66,32 +66,29 @@ MOBILE NAV
 DESKTOP NAV 
 ================================= -->
 
-    <div id="desktop-nav">
         <ul class="desktop-menu">
-            <li class="button"><a href="work.html"><span>WORKS</span></a></li>
+            <li class="button" id="work-button"><a href="work.html"><span>WORKS</span></a></li>
             <li class="button" id="about-button"><span>ABOUT</span></li>
             <li class="button" id="contact-button"><span>CONTACT</span></li>
-            <li class="button name-button"><span>Cindy Castano - UI Designer / Graphic designer</span></li>
         </ul>
-
-    </div>
 
     <!-- ================================= 
 HOME
 ================================= -->
+   <a href="index.html"><img src="images/freakitty-white.svg" alt="logo" class="logo_desktop"></a>
    
    
     <div class="mobile-lines">
-        <img src="images/lines-blackbg.svg" alt="black lines" class="bg-lines">
+        <img src="images/lines-blackbg.svg" alt="black lines" class="bg-lines lines">
+    </div>
+    <div class="desktop-lines">
+        <img src="images/lines-blackbg-desktop.svg" alt="black lines" class="bg-lines-desktop">
     </div>
     <div class="home_title">
         <img src="images/home_name.svg" alt="home name, traduction = freakitty" class="home-name">
         <h1>UI Designer / Graphic Designer </h1>
     </div>
     
- 
-    
-
     <!-- =============================================== 
 ABOUT 
 ================================================ -->
@@ -100,8 +97,8 @@ ABOUT
 
         <!-- ===================== CONSOLE ====================== -->
 
-        <div id="console">
-            <span class="placeholder text">Start typing</span>
+        <div id="console" class="text">
+            <span class="placeholder">Start typing</span>
             <span id="hey"></span>
             <span class="cursor">&nbsp;</span>
         </div>
@@ -133,15 +130,18 @@ CONTACT
          
        
         <div class="mobile-lines green_lines">
-            <img src="images/lines-greenbg.svg" alt="green lines">
+            <img src="images/lines-greenbg.svg" alt="green lines" class="lines">
         </div>
+        <div class="desktop-lines">
+        <img src="images/lines-greenbg-desktop.svg" alt="green lines" class="bg-lines-desktop-green">
+    </div>
         
         
     </div>
 
     
  <footer>
-     <p class="bottom-name button name-button">Cindy Castano - UI Designer / Graphic designer</p>
+     <a href="index.html"><p class="bottom-name button name-button">Cindy Castano - UI Designer / Graphic designer</p></a>
  </footer>  
     
     <script src="js/jquery-3.3.1.min.js"></script>

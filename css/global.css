@@ -1,6 +1,11 @@
 html{
     height: 100%;
 }
+
+.noscroll{
+    overflow: hidden;
+}
+
 body{
     overflow: hidden;
     min-height: 100vh;
@@ -25,7 +30,7 @@ BACKGROUND STYLE
 /* ==================================
 TEXT STYLE
 =====================================*/
-.desktop-menu{
+.mobile-menu{
     color: #5CF6C3;
     font-family: 'Alegreya Sans', sans-serif;
     font-style: normal;
@@ -34,6 +39,15 @@ TEXT STYLE
     line-height: 42px;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.desktop-menu{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: .8em;
 }
 
 .text{
@@ -82,10 +96,10 @@ TEXT STYLE
 h1{
     font-family: 'Alegreya Sans', sans-serif;
     color: #CECECE;
-    transform: matrix(0.71, 0.34, -1.12, 0.62, 0, -83);
+    transform: matrix(0.71, 0.34, -1.12, 0.62, 0, -5);
     font-style: normal;
     font-weight: 500;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 a{
@@ -97,6 +111,71 @@ SECTION
 =====================================*/
 .button{
     position: fixed;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    transition: all .3s ease;
+    font-size: 2.2em;
+}
+
+.desktop-menu{
+    position: fixed;
+    z-index: 900;
+}
+
+#contact-button{
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#about-button{
+    top: 50%;
+    transform: rotate(270deg);
+}
+
+#work-button{
+    right: 0%;
+    top: 50%;
+    transform: rotate(90deg);
+}
+
+.desktop-menu span{
+    position: relative;
+    display: block;
+    cursor: pointer;
+     color: #5CF6C3;
+}
+
+.desktop-menu span:before, .desktop-menu span:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 6px;
+    top: 50%;
+    margin-top: -3px;
+    background: #181818;
+}
+
+.desktop-menu span:before {
+    left: -2.5px;
+}
+.desktop-menu span:after {
+    right: 2.5px;
+    background: #181818;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.desktop-menu span:hover:before {
+    background: #181818;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.desktop-menu span:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
 }
 
 .bottom-name{
@@ -115,7 +194,7 @@ SECTION
     height: 100%;
     position: fixed;
     background-color: #5CF6C3;
-    top: -100%;
+    top: -250%;
 }
 
 #contact.open{top: 0;}
@@ -135,9 +214,6 @@ SECTION
     left: 10%;
     padding-right: 100px;
     max-width: 700px;
-    line-height: 40px;
-    font-family: 'cutive mono';
-    font-size: 1.5em;
 }
 
 .cursor {
@@ -167,7 +243,7 @@ SECTION
 @-o-keyframes blink {0% { opacity: 1; }25% { opacity: 0; }50% { opacity: 0; }100% { opacity: 1; }}
 
 footer{
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
     height: 20px;

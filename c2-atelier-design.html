@@ -43,7 +43,7 @@ MOBILE NAV
 ================================= -->
         <div id="burger">
             <div class="navbar">
-                <ul class="desktop-menu iso">
+                <ul class="mobile-menu iso">
                     <li><a id="burger-home" href="index.html">HOME</a></li>
                     <hr class="underline">
                     <li><a id="burger-works" href="work.html">WORKS</a></li>
@@ -66,53 +66,57 @@ MOBILE NAV
 DESKTOP NAV 
 ================================= -->
 
-    <div id="desktop-nav">
         <ul class="desktop-menu">
-            <li class="button"><a href="work.html"><span>WORKS</span></a></li>
+            <li class="button" id="work-button"><a href="work.html"><span>WORKS</span></a></li>
             <li class="button" id="about-button"><span>ABOUT</span></li>
             <li class="button" id="contact-button"><span>CONTACT</span></li>
-            <li class="button name-button"><span>Cindy Castano - UI Designer / Graphic designer</span></li>
         </ul>
 
-    </div>
+
 
     <!-- ================================= 
 PROJET
 ================================= -->
 
+   <a href="index.html"><img src="images/freakitty-white.svg" alt="logo" class="logo_desktop" ></a>
+   
     <img src="images/c2/Perspective-presentation-c2.svg" alt="perspective mockup c2 atelier design" class="main_pic_project">
 
-    <h3 class="title-project title_page_project">C2 Atelier Design</h3>
+   <div class="presentation">
+       <h3 class="title-project title_page_project">C2 Atelier Design</h3>
     <p class="text project_text">C2 Atelier Design is a graphic design studio based in Paris. Their universe is based on space. Represented by a clean site and smooth navigation.</p>
     <p class="caption">UI/UX Design - Development</p>
     <p class="text project_text link_project">>> <a href="https://c2atelierdesign.fr/" target="_blank" class="link">WEBSITE</a></p>
+   </div>
+   
+   <div class="scroll">
+       <img src="images/scroll-white.svg" alt="icon scroll down white" class="scroll_icon">
+   </div>
+    
 
-    <div class="anim">
-        <div class="card">
+    <div class="anim wrap">
+        <div class="card midd">
             <img src="images/c2/Laptop-home-view.png" alt="browser view home" class="mockup">
         </div>
-    </div>
-
-    <div class="anim">
-        <div class="card">
+        <div class="card midd">
             <img src="images/c2/Laptop-services-view.png" alt="browser view service" class="mockup">
         </div>
     </div>
 
-    <div class="anim">
-        <div class="card">
+
+    <div class="anim last_mockup_desktop wrap">
+        <div class="card midd">
             <img src="images/c2/Laptop-about-view.png" alt="browser view about" class="mockup">
+        </div>
+                <div class="card midd">
+            <img src="images/c2/Laptop-contact-view.png" alt="browser view about" class="mockup last_mockup">
         </div>
     </div>
 
-    <div class="anim">
-        <div class="card">
-            <img src="images/c2/Laptop-contact-view.png" alt="browser view about" class="mockup">
-        </div>
+
+    <div class="nav_project">
+    <a href="septembre-illustration.html" class="title-project back_project next-project"><p >Next project - </p><p class="thin"> Septembre illustration</p> &gt; &gt;</a>
     </div>
-    
-    <a href="work.html" class="title-project back_project">&lt; &lt; Retour aux projets</a>
-    
     <p class="bottom-name name-button green_lines_footer">Cindy Castano - UI Designer / Graphic designer</p>
 
     <!-- =============================================== 
@@ -123,8 +127,8 @@ ABOUT
 
         <!-- ===================== CONSOLE ====================== -->
 
-        <div id="console">
-            <span class="placeholder text">Start typing</span>
+        <div id="console" class="text">
+            <span class="placeholder">Start typing</span>
             <span id="hey"></span>
             <span class="cursor">&nbsp;</span>
         </div>
@@ -156,15 +160,18 @@ CONTACT
 
 
         <div class="mobile-lines green_lines">
-            <img src="images/lines-greenbg.svg" alt="green lines">
+            <img src="images/lines-greenbg.svg" alt="green lines" class="lines">
         </div>
+        <div class="desktop-lines">
+        <img src="images/lines-greenbg-desktop.svg" alt="green lines" class="bg-lines-desktop-green">
+    </div>
 
 
     </div>
 
 
     <footer>
-        <p class="bottom-name button-work name-button">Cindy Castano - UI Designer / Graphic designer</p>
+        <a href="index.html"><p class="bottom-name button-work name-button">Cindy Castano - UI Designer / Graphic designer</p></a>
     </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
