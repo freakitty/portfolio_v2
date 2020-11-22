@@ -206,6 +206,7 @@ $(function () {
             $('.bg-lines-desktop').attr('src', 'images/lines-whitebg-desktop.svg');
             $('.logo_desktop').attr('src', 'images/freakitty-black.svg');
             $('.scroll_icon').attr('src', 'images/scroll-black.svg');
+             $('.home-name').attr('src', 'images/home_name-whiteBG.svg');
         } else {
             $('.radio_button').attr('src', 'images/radio_button-white-unchecked.svg');
             $('body').removeClass('whitebg');
@@ -223,6 +224,7 @@ $(function () {
             $('.bg-lines-desktop').attr('src', 'images/lines-blackbg-desktop.svg');
             $('.logo_desktop').attr('src', 'images/freakitty-white.svg');
             $('.scroll_icon').attr('src', 'images/scroll-white.svg');
+            $('.home-name').attr('src', 'images/home_name-blackBG.svg');
         }
     });
 
