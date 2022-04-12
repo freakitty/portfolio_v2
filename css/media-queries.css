@@ -441,6 +441,21 @@ WORK
   .green_lines_footer {
     margin-bottom: 20px;
   }
+  
+  /* ============ clients logo ============*/
+  
+  .clients{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+  }
+  
+  .clients img{
+    width: 15%;
+    padding: 0 20px 20px 0;
+  }
 
   /* ============ project page ============*/
 
@@ -544,7 +559,7 @@ MOBILE 375PX
     transform: matrix(0.71, 0.34, -1.12, 0.62, 0, -47);
   }
 
-  .title-project {
+  .title-project, .clients {
     padding-left: 30px;
   }
 
@@ -606,6 +621,10 @@ MOBILE 411PX
 
   .caption {
     font-size: 1em;
+  }
+  
+  .clients img{
+    width: 20%;
   }
 }
 
@@ -875,6 +894,13 @@ TABLETTE 768PX
     font-size: .8em;
   }
 
+  .clients{
+    padding-left: 40px;
+  }
+  
+  .clients img{
+   padding: 0 30px 30px 0;
+  }
 }
 
 /* =================================
@@ -1039,7 +1065,15 @@ TABLETTE 1024PX
   .nav_project{
     padding: 0 50px;
   }
-
+  
+  .clients img{
+  width: 10%;
+  }
+  
+  .clients{
+    padding-left: 120px;
+    padding-bottom: 20px;
+  }
 }
 
 /* =================================
@@ -1261,6 +1295,21 @@ DESKTOP 1100PX
   .opacity{
     opacity: 0;
   }
+  
+  .clients{
+    padding-left: 150px;
+  }
+}
+
+/* =================================
+DESKTOP 1438PX
+===================================*/
+
+@media screen and (min-width:1438px) {
+  .clients img{
+    width: 100px;
+    padding: 0 60px 20px 0;
+  }
 }
 
 /* =================================
@@ -1404,6 +1453,14 @@ transform: matrix(0.78, 0.34, -1.12, 0.62, 30, -146);
   .radio_button{
     width: 60px;
   }
+  
+  .clients{
+    padding-left: 200px;
+  }
+  
+  .clients img{
+    width: 150px;
+  }
 }
 
 /* =================================
@@ -1530,6 +1587,14 @@ DESKTOP 4000PX
   
      .back_project p{
     margin: 35px 0;
+  }
+  
+  .clients{
+    padding-left: 300px;
+  }
+  
+  .clients img{
+    width: 300px;
   }
 }
 

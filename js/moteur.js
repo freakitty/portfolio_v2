@@ -188,43 +188,74 @@ $(function () {
     RADIO BUTTON SWITCH 
     =============================== */
 
+    let storage = window.sessionStorage;
+    function darkmodeon(){ 
+        $('.radio_button').attr('src', 'images/radio_button-white-unchecked.svg');
+        $('body').removeClass('whitebg');
+        $('body').addClass('blackbg');
+        $('.logo').attr('src', 'images/freakitty-white.svg');
+        $('.bg-lines').attr('src', 'images/lines-blackbg.svg');
+        $('h1').css('color', '#CECECE');
+        $('.bottom-name').css('color', '#CECECE');
+        $('.navbar').css('background-color', '#181818');
+        $('#about').css('background-color', '#181818');
+        $('.green_lines-animation>span').css('background-color', '#53756A');
+        $('.title-project').css('color', '#ffffff');
+        $('.personnal-project').css('color', '#6B6B6B');
+        $('.caption').css('color', '#636363');
+        $('.bg-lines-desktop').attr('src', 'images/lines-blackbg-desktop.svg');
+        $('.logo_desktop').attr('src', 'images/freakitty-white.svg');
+        $('.scroll_icon').attr('src', 'images/scroll-white.svg');
+        $('.home-name').attr('src', 'images/home_name-blackBG.svg');
+        $('.tinyclues').attr('src', 'images/clients/white/tinyclues-logo%201.png');
+        $('.quitoque').attr('src', 'images/clients/white/Logotype_Quitoque_RVB_blanc%201.png');
+        $('.dii').attr('src', 'images/clients/white/Dii_Logo.png');
+        $('.wm').attr('src', 'images/clients/white/wm-logo-white%201.png');
+        $('.activation').attr('src', 'images/clients/white/logo-venise-activation-white%201.png');
+        $('.beycome').attr('src', 'images/clients/white/Logo%20Beycome.png');
+    }
+    function lightmodeon(){
+        $('body').removeClass('blackbg');
+        $('body').addClass('whitebg');
+        $('.logo').attr('src', 'images/freakitty-black.svg');
+        $('.bottom-name').css('color', '#464646');
+        $('h1').css('color', '#464646');
+        $('.bg-lines').attr('src', 'images/lines-whitebg.svg');
+        $('.radio_button').attr('src', 'images/radio_button-black-checked.svg');
+        $('.navbar').css('background-color', '#ffffff');
+        $('#about').css('background-color', '#ffffff');
+        $('.title-project').css('color', '#464646');
+        $('.personnal-project').css('color', '#CECECE');
+        $('.green_lines-animation>span').css('background-color', '#5CF6C3');
+        $('.caption').css('color', '#CECECE');
+        $('.bg-lines-desktop').attr('src', 'images/lines-whitebg-desktop.svg');
+        $('.logo_desktop').attr('src', 'images/freakitty-black.svg');
+        $('.scroll_icon').attr('src', 'images/scroll-black.svg');
+         $('.home-name').attr('src', 'images/home_name-whiteBG.svg');
+        $('.tinyclues').attr('src', 'images/clients/black/tinyclues-logo%201.png');
+        $('.quitoque').attr('src', 'images/clients/black/Logotype_Quitoque_RVB_blanc%201.png');
+        $('.dii').attr('src', 'images/clients/black/Dii_Logo.png');
+        $('.wm').attr('src', 'images/clients/black/wm-logo-white%201.png');
+        $('.activation').attr('src', 'images/clients/black/logo-venise-activation-white%201.png');
+        $('.beycome').attr('src', 'images/clients/black/Logo%20Beycome.png');
+    }
+    
+    if (storage.getItem('darkmode')) {
+        if(storage.getItem('darkmode')== 'true') {
+            darkmodeon();
+        } else {
+            lightmodeon();
+        }
+    }
+    
+    
     $(".radio_button").on('click', function () {
         if ($('body').hasClass('blackbg')) {
-            $('body').removeClass('blackbg');
-            $('body').addClass('whitebg');
-            $('.logo').attr('src', 'images/freakitty-black.svg');
-            $('.bottom-name').css('color', '#464646');
-            $('h1').css('color', '#464646');
-            $('.bg-lines').attr('src', 'images/lines-whitebg.svg');
-            $('.radio_button').attr('src', 'images/radio_button-black-checked.svg');
-            $('.navbar').css('background-color', '#ffffff');
-            $('#about').css('background-color', '#ffffff');
-            $('.title-project').css('color', '#464646');
-            $('.personnal-project').css('color', '#CECECE');
-            $('.green_lines-animation>span').css('background-color', '#5CF6C3');
-            $('.caption').css('color', '#CECECE');
-            $('.bg-lines-desktop').attr('src', 'images/lines-whitebg-desktop.svg');
-            $('.logo_desktop').attr('src', 'images/freakitty-black.svg');
-            $('.scroll_icon').attr('src', 'images/scroll-black.svg');
-             $('.home-name').attr('src', 'images/home_name-whiteBG.svg');
+            lightmodeon();
+            storage.setItem('darkmode','false');
         } else {
-            $('.radio_button').attr('src', 'images/radio_button-white-unchecked.svg');
-            $('body').removeClass('whitebg');
-            $('body').addClass('blackbg');
-            $('.logo').attr('src', 'images/freakitty-white.svg');
-            $('.bg-lines').attr('src', 'images/lines-blackbg.svg');
-            $('h1').css('color', '#CECECE');
-            $('.bottom-name').css('color', '#CECECE');
-            $('.navbar').css('background-color', '#181818');
-            $('#about').css('background-color', '#181818');
-            $('.green_lines-animation>span').css('background-color', '#53756A');
-            $('.title-project').css('color', '#ffffff');
-            $('.personnal-project').css('color', '#6B6B6B');
-            $('.caption').css('color', '#636363');
-            $('.bg-lines-desktop').attr('src', 'images/lines-blackbg-desktop.svg');
-            $('.logo_desktop').attr('src', 'images/freakitty-white.svg');
-            $('.scroll_icon').attr('src', 'images/scroll-white.svg');
-            $('.home-name').attr('src', 'images/home_name-blackBG.svg');
+            darkmodeon();
+            storage.setItem('darkmode','true');
         }
     });
 
