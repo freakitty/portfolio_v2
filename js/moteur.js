@@ -213,6 +213,8 @@ $(function () {
         $('.wm').attr('src', 'images/clients/white/wm-logo-white%201.png');
         $('.activation').attr('src', 'images/clients/white/logo-venise-activation-white%201.png');
         $('.beycome').attr('src', 'images/clients/white/Logo%20Beycome.png');
+        $('.etage').attr('src', 'images/clients/white/3E-LOGO-white.png');
+        $('.logick').attr('src', 'images/clients/white/logo-logick-blanc.png');
     }
     function lightmodeon(){
         $('body').removeClass('blackbg');
@@ -238,6 +240,8 @@ $(function () {
         $('.wm').attr('src', 'images/clients/black/wm-logo-white%201.png');
         $('.activation').attr('src', 'images/clients/black/logo-venise-activation-white%201.png');
         $('.beycome').attr('src', 'images/clients/black/Logo%20Beycome.png');
+        $('.etage').attr('src', 'images/clients/black/3E-LOGO-black.png');
+        $('.logick').attr('src', 'images/clients/black/logo-logick-noir.png');
     }
     
     if (storage.getItem('darkmode')) {
