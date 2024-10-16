@@ -152,7 +152,7 @@ HOME
   .home-name {
     margin-top: 22px;
     width: 250px;
-    transform: rotate(-3.4deg);
+    /*transform: rotate(-3.4deg);*/
   }
 
   .bottom-name {
@@ -546,6 +546,7 @@ MOBILE 360PX
 @media screen and (min-width:360px) {
   .home-name {
     margin-top: 25px;
+    margin-bottom: 25px;
   }
 
   h1 {
@@ -593,7 +594,7 @@ MOBILE 411PX
   .home-name {
     margin-top: 23px;
     width: 340px;
-    transform: rotate(-4deg);
+    /*transform: rotate(-4deg);*/
   }
 
   h1 {
@@ -643,6 +644,7 @@ MOBILE 480PX
 @media screen and (min-width:480px) {
   .home-name {
     width: 400px;
+    margin-bottom: 30px;
   }
 
   h1 {
@@ -769,6 +771,7 @@ TABLETTE 768PX
   .home-name {
     width: 600px;
     margin-top: 7px;
+    margin-bottom: 50px;
   }
 
   h1 {
@@ -935,6 +938,7 @@ TABLETTE 1024PX
   .home-name {
     width: 600px;
     margin-top: 30px;
+    margin-bottom: 20px;
   }
 
   h1 {
@@ -1121,7 +1125,7 @@ DESKTOP 1100PX
   
   .home-name{
     width: 450px;
-    transform: rotate(-6deg);
+    /*transform: rotate(-0deg);*/
     margin-top: 20px;
   }
   
@@ -1628,7 +1632,7 @@ MOBILE 320PX LANDSCAPE
   
   .home-name{
     width: 300px;
-    transform: rotate(-19deg);
+    transform: rotate(-12deg);
   }
   
   .home_title{
