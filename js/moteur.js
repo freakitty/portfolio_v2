@@ -145,7 +145,7 @@ $(function () {
     /* ======================================= 
     KEYDOWN 
     =============================== */
-    var show = ['Hello', 'there', '!', '<br>', "I am", 'Cindy', 'Castano,', '<br>', 'an', "UI Designer", '&', "Graphic", "designer", 'based', 'in', 'Paris.', "I'm", 'passionate', 'about', 'print,', "design,", 'and', 'digital.', 'I', 'like', 'to', "mix", 'both', 'to', 'create', 'solutions', 'that', 'add', 'value.', '<br>', "Let's", 'get', 'in', 'touch', 'for', 'any', 'project', 'inquiries', '<br>', '>>', '<a href="mailto:hello@freakitty.cc" style="color:#5CF6C3">Just drop me a line</a>', '.'],
+    var show = ['Hello', 'there', '!', '<br>', "I am", 'Cindy', 'Castano,', '<br>', 'an', "UI Designer", '&', "Graphic", "designer", 'based', 'in', 'Paris.', '<br>', 'Passionate', 'about', 'visual', "design", 'and', 'user', "experience,", '<br>', 'I', 'combine', 'creativity', "and", 'technical', 'expertise', 'to', 'bring', 'intuitive', 'and', 'aesthetic', 'interfaces', 'to', 'life.', '<br>', "Let's", 'get', 'in', 'touch', 'for', 'any', 'project', 'inquiries', '<br>', '>>', '<a href="mailto:hello@freakitty.cc" style="color:#5CF6C3">Just drop me a line</a>', '.'],
         i = 0,
         updateHey = function () {
             if (i < show.length) {
@@ -202,7 +202,9 @@ $(function () {
         $('.green_lines-animation>span').css('background-color', '#53756A');
         $('.title-project').css('color', '#ffffff');
         $('.personnal-project').css('color', '#6B6B6B');
-        $('.caption').css('color', '#636363');
+        $('.chip').css('color', '#DFDFDF');
+        $('.chip').css('background-color', '#3B3B3B');
+        $('.link').css('color', '#CECECE');
         $('.bg-lines-desktop').attr('src', 'images/lines-blackbg-desktop.svg');
         $('.logo_desktop').attr('src', 'images/freakitty-white.svg');
         $('.scroll_icon').attr('src', 'images/scroll-white.svg');
@@ -229,11 +231,13 @@ $(function () {
         $('.title-project').css('color', '#464646');
         $('.personnal-project').css('color', '#CECECE');
         $('.green_lines-animation>span').css('background-color', '#5CF6C3');
-        $('.caption').css('color', '#CECECE');
+        $('.chip').css('color', '#1B1B1B');
+        $('.chip').css('background-color', '#F4F4F4');
+        $('.link').css('color', '#464646');
         $('.bg-lines-desktop').attr('src', 'images/lines-whitebg-desktop.svg');
         $('.logo_desktop').attr('src', 'images/freakitty-black.svg');
         $('.scroll_icon').attr('src', 'images/scroll-black.svg');
-         $('.home-name').attr('src', 'images/home_name-whiteBG.svg');
+        $('.home-name').attr('src', 'images/home_name-whiteBG.svg');
         $('.tinyclues').attr('src', 'images/clients/black/tinyclues-logo%201.png');
         $('.quitoque').attr('src', 'images/clients/black/Logotype_Quitoque_RVB_blanc%201.png');
         $('.dii').attr('src', 'images/clients/black/Dii_Logo.png');

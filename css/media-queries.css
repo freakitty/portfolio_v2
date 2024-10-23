@@ -217,8 +217,12 @@ CONTACT
     position: absolute;
     filter: drop-shadow(0px 2px 15px rgba(196, 196, 196, 0.5));
     transform: rotate(-4.11deg);
+    transition: filter .5s ease-out;
   }
-
+  .contact_link:hover{
+    filter: none;
+  }
+  
   .contact-mail {
     left: 30%;
     top: 28%;
@@ -229,12 +233,14 @@ CONTACT
     left: 46%;
     top: 47%;
     width: 50%;
+    transition: transform .5s ease-out;
   }
 
   .contact-linkedin {
     left: 2%;
     top: 56%;
     width: 60%;
+    transition: transform .5s ease-out;
   }
 
   /* =================================
@@ -485,8 +491,11 @@ WORK
     max-width: 400px;
   }
 
-  .caption {
+  .chip-container{
     margin-left: 30px;
+  }
+
+  .chip {
     font-size: .8em;
     margin-top: 5px;
   }
@@ -577,7 +586,7 @@ MOBILE 375PX
   }
 
   .project_text,
-  .caption {
+  .chip-container {
     margin-left: 40px;
   }
 }
@@ -628,7 +637,7 @@ MOBILE 411PX
     font-size: .8em;
   }
 
-  .caption {
+  .chip {
     font-size: 1em;
   }
   
@@ -681,8 +690,7 @@ MOBILE 480PX
     width: 90%;
   }
 
-  .caption {
-    font-size: 1.1em;
+  .chip-container {
     margin-top: 10px;
   }
 
@@ -880,13 +888,13 @@ TABLETTE 768PX
   }
 
   .project_text,
-  .caption {
+  .chip-container {
     margin-left: 60px;
     max-width: 600px;
   }
 
-  .caption {
-    font-size: 1.5em;
+  .chip {
+    font-size: 1em;
   }
 
   .back_project {
@@ -1052,13 +1060,9 @@ TABLETTE 1024PX
   }
 
   .project_text,
-  .caption {
+  .chip-container {
     margin-left: 120px;
     max-width: 700px;
-  }
-
-  .caption {
-    font-size: 1.8em;
   }
 
   .back_project {
@@ -1151,8 +1155,8 @@ DESKTOP 1100PX
     line-height: 40px;
   }
   
-  .caption {
-    font-size: 1.2em;
+  .chip {
+    font-size: .8em;
   }
   
   /* =============== contact ==============*/
@@ -1261,7 +1265,7 @@ DESKTOP 1100PX
     top: 25vh;
   }
 
-  .project_text, .caption{
+  .project_text, .chip-container{
     margin-left: 100px;
   }
   
@@ -1359,15 +1363,15 @@ DESKTOP 1600PX
     line-height: 40px;
   }
   
-  .caption{
-    font-size: 1.4em;
+  .chip{
+    font-size: 1.2em;
   }
   
   .last-line{
     padding-left: 150px;
   }
   
-  .project_text, .caption{
+  .project_text, .chip-container{
     margin-left: 150px;
   }
   
@@ -1421,8 +1425,8 @@ transform: matrix(0.78, 0.34, -1.12, 0.62, 30, -146);
     line-height: 60px;
   }
   
-  .caption{
-    font-size: 2em;
+  .chip{
+    font-size: 1.5em;
   }
   
   .title-project{
@@ -1435,7 +1439,7 @@ transform: matrix(0.78, 0.34, -1.12, 0.62, 30, -146);
     padding-left: 200px;
   }
   
-  .project_text, .caption{
+  .project_text, .chip-container{
     margin-left: 200px;
   }
   
@@ -1479,7 +1483,7 @@ transform: matrix(0.78, 0.34, -1.12, 0.62, 30, -146);
 DESKTOP 4000PX
 ===================================*/
 
-@media screen and (min-width:4000px) {
+@media screen and (min-width: 3840px) {
   .button{
     font-size: 6.4em;
   }
@@ -1576,13 +1580,13 @@ DESKTOP 4000PX
     top: -700px;
   }
   
-  .project_text, .caption{
+  .project_text, .chip-container{
     margin-left: 300px;
     max-width: 1400px;
   }
   
-  .caption{
-    font-size: 4em;
+  .chip{
+    font-size: 3em;
   }
   
   .scroll img{
@@ -1723,7 +1727,7 @@ MOBILE 700PX LANDSCAPE
     width: 45px;
   }
   
-  .caption{
+  .chip{
     font-size: 1em;
   }
   

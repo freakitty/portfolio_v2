@@ -65,7 +65,11 @@ TEXT STYLE
     font-family: 'Noto Sans HK', sans-serif;
     font-style: normal;
     font-weight: 700;
-    text-decoration: underline;
+    color: #CECECE;
+    transition: color .3s ease;
+}
+
+.link:hover{
     color: #5CF6C3;
 }
 
@@ -86,11 +90,24 @@ TEXT STYLE
     color: #5CF6C3;
 }
 
-.caption{
+.chip-container{
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.chip{
+    display: inline-block;
+    padding: 8px 20px;
+    margin-right: 12px;
+    border-radius: 50px;
     font-family: 'Alegreya Sans', sans-serif;
-    font-style: italic;
-    font-weight: 300;
-    color: #636363;
+    font-style: normal;
+    font-weight: 100;
+    font-size: .8em;
+    text-transform: uppercase;    
+    color: #DFDFDF;
+    background-color: #3B3B3B;
 }
 
 h1{
