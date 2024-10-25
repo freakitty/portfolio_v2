@@ -74,6 +74,7 @@ TEXT STYLE
 }
 
 .title-project{
+    display: inline-block;
     font-family: 'Noto Sans HK', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -110,6 +111,12 @@ TEXT STYLE
     background-color: #3B3B3B;
 }
 
+.chip_small{
+    padding: 4px 10px;
+    font-weight: 300;
+    margin-left: 8px;
+}
+
 h1{
     font-family: 'Alegreya Sans', sans-serif;
     color: #CECECE;
@@ -128,6 +135,10 @@ a{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.project_link{
+    vertical-align: text-top;
 }
 
 /* ==================================
@@ -271,6 +282,7 @@ footer{
     width: 100%;
     bottom: 0;
     height: 20px;
+    padding-bottom: 10px;
 }
 
 .anim {

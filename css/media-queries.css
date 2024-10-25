@@ -157,6 +157,7 @@ HOME
 
   .bottom-name {
     font-size: .7em;
+    padding-bottom: 10px;
   }
 
   .logo {
@@ -492,13 +493,17 @@ WORK
   }
 
   .chip-container{
-    margin-left: 30px;
+    margin: 10px 30px 40px 30px;
   }
 
   .chip {
-    font-size: .8em;
+    font-size: .7em;
     margin-top: 5px;
   }
+
+  .chip_small{
+    margin-top: 0;
+}
 
   .link_project {
     margin: 30px 0 50px 30px;
@@ -528,7 +533,7 @@ WORK
     text-align: right;
   }
   
-    .prev-project{
+  .prev-project{
     text-align: left;
   }
   
@@ -562,6 +567,18 @@ MOBILE 360PX
     transform: matrix(0.71, 0.34, -1.12, 0.62, 0, -50);
   }
 
+  .title-project{
+    font-size: .8em;
+  }
+
+  .chip_small{
+    font-size: .7em;
+  }
+
+  .title_page_project{
+    margin: 170px 0 5px 10px;
+  }
+
 }
 
 /* =================================
@@ -589,6 +606,17 @@ MOBILE 375PX
   .chip-container {
     margin-left: 40px;
   }
+}
+
+/* =================================
+MOBILE 390PX
+===================================*/
+
+@media screen and (min-width:390px) {
+  .title_page_project{
+    margin: 200px 0 5px 10px;
+  }
+
 }
 
 /* =================================
@@ -638,7 +666,11 @@ MOBILE 411PX
   }
 
   .chip {
-    font-size: 1em;
+    font-size: .8em;
+  }
+
+  .chip_small{
+    font-size: .7em;
   }
   
   .clients img{
@@ -788,7 +820,7 @@ TABLETTE 768PX
   }
 
   .bottom-name {
-    font-size: 1.1em;
+    font-size: .9em;
   }
 
   #hamburger-button.open > span:first-child {
@@ -819,8 +851,8 @@ TABLETTE 768PX
   /* ============ about ============ */
 
   .text {
-    font-size: 1.5em;
-    line-height: 50px;
+    font-size: 1.2em;
+    line-height: 45px;
   }
 
   #consolequeries {
@@ -897,6 +929,10 @@ TABLETTE 768PX
     font-size: 1em;
   }
 
+  .chip_small{
+    font-size: .8em;
+  }
+
   .back_project {
     padding: 0;
   }
@@ -959,7 +995,6 @@ TABLETTE 1024PX
   }
 
   .bottom-name {
-    font-size: 1.4em;
     bottom: 30px;
   }
 
@@ -1358,6 +1393,50 @@ DESKTOP 1600PX
     margin: 300px 0 20px 0;
   }
   
+  .title-project{
+    margin-bottom : 60px;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(20deg);
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+      margin-bottom: 90px;
+    }
+
+    100% {
+      transform: rotate(0deg);
+      margin-bottom: 60px;
+    }
+  }
+
+  @keyframes empty {
+    0% {
+      transform: rotate(20deg);
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+      margin-bottom: 140px;
+    }
+
+    100% {
+      transform: rotate(0deg);
+      margin-bottom: 120px;
+    }
+  }
+
   .text{
     font-size: 1.4em;
     line-height: 40px;
@@ -1366,9 +1445,15 @@ DESKTOP 1600PX
   .chip{
     font-size: 1.2em;
   }
+
+  .chip_small{
+    font-size: 1em;
+    padding: 6px 12px;
+  }
   
   .last-line{
     padding-left: 150px;
+    margin-bottom: 60px;
   }
   
   .project_text, .chip-container{
@@ -1429,13 +1514,58 @@ transform: matrix(0.78, 0.34, -1.12, 0.62, 30, -146);
     font-size: 1.5em;
   }
   
+  .chip_small{
+    padding: 8px 20px;
+  }
+
   .title-project{
     font-size: 1.8em;
     padding-left: 200px;
+    margin-bottom : 70px;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(20deg);
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+      margin-bottom: 110px;
+    }
+
+    100% {
+      transform: rotate(0deg);
+      margin-bottom: 70px;
+    }
+  }
+
+  @keyframes empty {
+    0% {
+      transform: rotate(20deg);
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+      margin-bottom: 140px;
+    }
+
+    100% {
+      transform: rotate(0deg);
+      margin-bottom: 140px;
+    }
   }
   
   .last-line{
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     padding-left: 200px;
   }
   
@@ -1480,7 +1610,7 @@ transform: matrix(0.78, 0.34, -1.12, 0.62, 30, -146);
 }
 
 /* =================================
-DESKTOP 4000PX
+DESKTOP 3840PX
 ===================================*/
 
 @media screen and (min-width: 3840px) {
@@ -1587,6 +1717,11 @@ DESKTOP 4000PX
   
   .chip{
     font-size: 3em;
+  }
+
+  .chip_small{
+    font-size: 2em;
+    padding: 12px 24px;
   }
   
   .scroll img{
