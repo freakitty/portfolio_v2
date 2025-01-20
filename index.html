@@ -63,7 +63,7 @@ MOBILE NAV
 
    </header>
     <!-- ================================= 
-DESKTOP NAV 
+DESKTOP NAV  
 ================================= -->
 
         <ul class="desktop-menu">
@@ -76,18 +76,38 @@ DESKTOP NAV
 HOME
 ================================= -->
    <a href="index"><img src="images/freakitty-white.svg" alt="logo" class="logo_desktop"></a>
-   
-   
-    <div class="mobile-lines">
-        <img src="images/lines-blackbg.svg" alt="black lines" class="bg-lines lines">
+
+
+   <img src="images/home_name-blackBG.svg" alt="home name, traduction = freakitty" class="home-name">
+
+   <!--<img src="images/home-bg.png" alt="background" class="home-bg">-->
+
+   <div class="gradient-bg">
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+    <div class="gradients-container">
+      <div class="g1"></div>
+      <div class="g2"></div>
+      <div class="g3"></div>
+      <div class="g4"></div>
+      <div class="g5"></div>
+      <div class="interactive"></div>
     </div>
-    <div class="desktop-lines">
-        <img src="images/lines-blackbg-desktop.svg" alt="black lines" class="bg-lines-desktop">
-    </div>
+  </div>
+   
     <div class="home_title">
-        <img src="images/home_name-blackBG.svg" alt="home name, traduction = freakitty" class="home-name">
-        <h1>UI Designer / Graphic Designer </h1>
+        <h1>Crafting user interfaces & <br> visual identities since 2018. </h1>
+        <p>Based in Paris, France <span class="highlight">available anywhere</span></p>
+        <h4><span class="highlight">↗</span> UI Design <br><span class="highlight">↗</span> Graphic Design <br><span class="highlight">↗</span> Web Design </h4>
     </div>
+    
     
     <!-- =============================================== 
 ABOUT 
@@ -98,7 +118,7 @@ ABOUT
         <!-- ===================== CONSOLE ====================== -->
 
         <div id="console" class="text">
-            <span class="placeholder">Start typing</span>
+            <span class="placeholder">Start typing anything</span>
             <span id="hey"></span>
             <span class="cursor">&nbsp;</span>
         </div>
@@ -141,12 +161,13 @@ CONTACT
 
     
  <footer>
-     <a href="index"><p class="bottom-name button name-button">Cindy Castano - UI Designer / Graphic designer</p></a>
+     <a href="index"><p class="bottom-name button name-button">Cindy Castano  ©freakitty 2025</p></a>
  </footer>  
     
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/TweenMax.min.js"></script>
     <script src="js/moteur.js"></script>
+    <script type="module" src="src/main.ts"></script>
 </body>
 
 </html>

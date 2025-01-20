@@ -1,3 +1,52 @@
+@font-face {
+    font-family: "PPNeueMontreal";
+    src: url("../font/PPNeueMontreal-Bold.otf")format('opentype'),
+        url("../font/PPNeueMontreal-Bold.woff")format('woff'),
+        url("../font/PPNeueMontreal-Bold.woff2")format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PPNeueMontreal";
+    src: url("../font/PPNeueMontreal-Medium.otf")format('opentype'),
+        url("../font/PPNeueMontreal-Medium.woff")format('woff'),
+        url("../font/PPNeueMontreal-Medium.woff2")format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PPNeueMontreal";
+    src: url("../font/PPNeueMontreal-Book.otf")format('opentype'),
+        url("../font/PPNeueMontreal-Book.woff")format('woff'),
+        url("../font/PPNeueMontreal-Book.woff2")format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PPNeueMontreal";
+    src: url("../font/PPNeueMontreal-Italic.otf")format('opentype'),
+        url("../font/PPNeueMontreal-Italic.woff")format('woff'),
+        url("../font/PPNeueMontreal-Italic.woff2")format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: "PPNeueMontreal";
+    src: url("../font/PPNeueMontreal-SemiBolditalic.otf")format('opentype'),
+        url("../font/PPNeueMontreal-SemiBolditalic.woff")format('woff'),
+        url("../font/PPNeueMontreal-SemiBolditalic.woff2")format('woff2');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: "PPNeueMontreal";
+    src: url("../font/PPNeueMontreal-Thin.otf")format('opentype'),
+        url("../font/PPNeueMontreal-Thin.woff")format('woff'),
+        url("../font/PPNeueMontreal-Thin.woff2")format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
 html{
     height: 100%;
 }
@@ -27,14 +76,22 @@ BACKGROUND STYLE
     color: #FFFFFF;
 }
 
+.home-bg{
+    width: 82%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -99;
+}
+
 /* ==================================
 TEXT STYLE
 =====================================*/
 .mobile-menu{
     color: #5CF6C3;
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'PPNeueMontreal', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 35px;
     line-height: 42px;
     text-transform: uppercase;
@@ -42,7 +99,7 @@ TEXT STYLE
 }
 
 .desktop-menu{
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'PPNeueMontreal', sans-serif;
     font-style: normal;
     font-weight: 500;
     text-transform: uppercase;
@@ -50,10 +107,22 @@ TEXT STYLE
     font-size: .8em;
 }
 
-.text{
-    font-family: 'Noto Sans HK', sans-serif;
+p{
+    font-family: 'PPNeueMontreal', sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
+    color: #C7F8E8;
+    font-size: 1em;
+}
+
+.highlight{
+    color: #5CF6C3;
+}
+
+.text{
+    font-family: 'PPNeueMontreal', sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 #menu a, #burger a{
@@ -118,12 +187,24 @@ TEXT STYLE
 }
 
 h1{
-    font-family: 'Alegreya Sans', sans-serif;
-    color: #CECECE;
-    transform: matrix(0.71, 0.34, -1.12, 0.62, 0, -5);
+    font-family: 'PPNeueMontreal', sans-serif;
+    color: #C7F8E8;
     font-style: normal;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 6.25em;
+    line-height: 85px;
+    margin-bottom: 16px;
+    z-index: -10;
+}
+
+h4{
+    font-family: 'PPNeueMontreal', sans-serif;
+    color: #C7F8E8;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25em;
+    line-height: 1.8em;
+    margin-top: 3em;
 }
 
 a{
@@ -144,6 +225,12 @@ a{
 /* ==================================
 SECTION
 =====================================*/
+.home-name{
+    position: absolute;
+    top: 20%;
+    right: 15%;
+}
+
 .button{
     position: fixed;
     cursor: pointer;
@@ -151,6 +238,10 @@ SECTION
     text-align: center;
     transition: all .3s ease;
     font-size: 2.2em;
+}
+
+.radio_button{
+    cursor: pointer;
 }
 
 .desktop-menu{
@@ -215,11 +306,10 @@ SECTION
 
 .bottom-name{
     width: 100%;
-    bottom: 20px;
     text-align: center;
-    font-family: 'Noto Sans HK', sans-serif;
+    font-family: 'PPNeueMontreal', sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: none;
     color: #CECECE;
 }
@@ -281,8 +371,7 @@ footer{
     position: fixed;
     width: 100%;
     bottom: 0;
-    height: 20px;
-    padding-bottom: 10px;
+    height: 12px;
 }
 
 .anim {

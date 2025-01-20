@@ -195,7 +195,10 @@ $(function () {
         $('body').addClass('blackbg');
         $('.logo').attr('src', 'images/freakitty-white.svg');
         $('.bg-lines').attr('src', 'images/lines-blackbg.svg');
-        $('h1').css('color', '#CECECE');
+        $('h1').css('color', '#C7F8E8');
+        $('p').css('color', '#C7F8E8');
+        $('h4').css('color', '#C7F8E8');
+        $('.highlight').css('color', '#5CF6C3');
         $('.bottom-name').css('color', '#CECECE');
         $('.navbar').css('background-color', '#181818');
         $('#about').css('background-color', '#181818');
@@ -224,6 +227,9 @@ $(function () {
         $('.logo').attr('src', 'images/freakitty-black.svg');
         $('.bottom-name').css('color', '#464646');
         $('h1').css('color', '#464646');
+        $('p').css('color', '#464646');
+        $('h4').css('color', '#464646');
+        $('.highlight').css('color', '#232F2B');
         $('.bg-lines').attr('src', 'images/lines-whitebg.svg');
         $('.radio_button').attr('src', 'images/radio_button-black-checked.svg');
         $('.navbar').css('background-color', '#ffffff');
