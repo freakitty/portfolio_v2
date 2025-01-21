@@ -1,4 +1,4 @@
-import './bg.scss'
+/*import './bg.scss'
 
 document.addEventListener('DOMContentLoaded', () => {
     const interBubble = document.querySelector<HTMLDivElement>('.interactive')!;
@@ -22,4 +22,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     move();
-});
+});*/
