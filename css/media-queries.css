@@ -1236,7 +1236,7 @@ DESKTOP 1100PX
     left: inherit;
     width: 40px;
   }
-  
+
   h1{
     font-size: 5.5em;
     line-height: 75px;
@@ -1244,14 +1244,28 @@ DESKTOP 1100PX
 
   .home-name{
     margin-top: 20px;
+    top: 0;
   }
   
   .bottom-name{
     font-size: .8em;
+
   }
 
   .home_title{
-    width: 40%;
+    width: 80%;
+    bottom: 15%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .left{
+    width: 60%;
+  }
+
+  .right{
+    width: 20%;
   }
 
   .logo_desktop{
