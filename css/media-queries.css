@@ -1,21 +1,16 @@
-/* =================================
-MOBILE 320PX
-===================================*/
+/* ==================================================
+        MOBILE 320PX
+====================================================*/
 
 @media screen and (min-width:120px) {
 
-  .desktop-menu,
-  .desktop-lines, .logo_desktop, .pic_project, .scroll {
+  .desktop-menu, .pic_project, .scroll {
     display: none;
-  }
-  
-  .mobile-lines{
-    display: block;
   }
 
   /* =================================
-HOME
-===================================*/
+          HOME
+  ===================================*/
 
   /*============= menu burger ===========*/
 
@@ -72,7 +67,11 @@ HOME
 
   .navbar {
     position: fixed;
-    z-index: 888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    z-index: 999;
     height: 100%;
     width: 100%;
     right: -100%;
@@ -83,7 +82,7 @@ HOME
     -o-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
     background-color: #181818;
-    color: #5CF6C3;
+    color: #EEF7F4;
   }
 
   .navbar.open {
@@ -91,11 +90,10 @@ HOME
     opacity: 1;
   }
 
-
   .navbar ul {
     list-style: none;
-    font-size: 1.5em;
-    margin-top: -15%;
+    font-size: .8em;
+    margin: 0 auto;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -105,27 +103,10 @@ HOME
   }
 
   .navbar ul li {
-    margin-bottom: 10px;
-    padding: 10px 0;
+    margin-bottom: 4px;
+    padding: 4px 0;
     text-align: left;
     z-index: 999;
-  }
-
-  .iso,
-  .iso::after {
-    transform: scaleX(0.866) skewY(-30deg);
-    transform-origin: 100% 100%;
-  }
-
-  hr {
-    margin-top: .5em;
-    margin-bottom: .5em;
-
-  }
-
-  .underline {
-    border: solid 0.1em;
-    margin-right: 80%;
   }
 
   /*============= home ===========*/
@@ -134,28 +115,30 @@ HOME
     font-size: .5em;
   }
 
-  .mobile-lines {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: -10;
-  }
-
-  .lines {
-    width: 100%;
-  }
-
   .home_title {
     width: 80%;
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 10%;
     z-index: -20;
   }
 
+  .logo_desktop{
+    display: none;
+  }
+
+  .logo_mobile{
+    display: block;
+    position: relative;
+    top: -16px;
+  }
+
+  .logo_mobile img{
+    width: 30%;
+  }
+
   h1{
-    font-size: 3em;
+    font-size: 2.5em;
     line-height: 45px;
     margin-bottom: 8px;
   }
@@ -166,8 +149,8 @@ HOME
 
   h4{
     font-size: 1em;
-    line-height: 1.3em;
-    margin-top: 1em;
+    line-height: 1.5em;
+    margin-top: 1.6em;
   }
 
   .home-name {
@@ -176,25 +159,18 @@ HOME
     width: 250px;
   }
 
-  .logo {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 200;
+  .mode{
+    display: none;
   }
 
-  .radio_button {
-    position: absolute;
-    top: 25px;
-    left: 20px;
-    z-index: 250;
-    width: 30px;
+  .mode_mobile {
+    margin-top: 20px;
+    width: 50px;
   }
 
   /* =================================
-ABOUT
-===================================*/
+        ABOUT
+  ===================================*/
 
   #console {
     display: none;
@@ -220,281 +196,283 @@ ABOUT
     line-height: 27px;
   }
 
-
   /* =================================
-CONTACT
-===================================*/
+        CONTACT
+  ===================================*/
 
-  .green_lines {
-    z-index: 42;
-  }
-
-  .contact_link {
-    z-index: 54;
+  .center-center {
     position: absolute;
-    filter: drop-shadow(0px 2px 15px rgba(196, 196, 196, 0.5));
-    transform: rotate(-4.11deg);
-    transition: filter .5s ease-out;
-  }
-  .contact_link:hover{
-    filter: none;
-  }
-  
-  .contact-mail {
-    left: 30%;
-    top: 28%;
-    width: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
 
-  .contact-github {
-    left: 46%;
-    top: 47%;
-    width: 50%;
-    transition: transform .5s ease-out;
+  [class*=btn-glitch-] {
+    display: inline-block;
+    font-family: 'PPNeueMontrealMono', sans-serif;
+    border: 1px solid #EAEAEA;
+    color: #EAEAEA;
+    padding: 10px 13px;
+    min-width: 175px;
+    line-height: 1.5em;
+    white-space: no-wrap;
+    text-transform: uppercase;
+    cursor: pointer;
   }
-
-  .contact-linkedin {
-    left: 2%;
-    top: 56%;
-    width: 60%;
-    transition: transform .5s ease-out;
+  [class*=btn-glitch-] .text_btn,
+  [class*=btn-glitch-] .decoration {
+    display: inline-block;
   }
-
-  /* =================================
-WORK
-===================================*/
-
-  /* ============ lines animation ============*/
-
-  .green_lines-animation > span {
-    margin-bottom: 18px;
+  [class*=btn-glitch-] .decoration {
+    display: inline-block;
+    float: right;
   }
-
-  .green_lines-animation > span {
-    display: block;
-    background-color: #53756A;
-    height: 1px;
-    width: 100%;
-    transform: rotate(20deg);
-    animation: rotate 1.5s ease-in-out forwards;
-    -webkit-animation: rotate 1.5s forwards ease-in-out;
-    -ms-animation: rotate 1.5s forwards ease-in-out;
-    -moz-animation: rotate 1.5s forwards ease-in-out;
-    -o-animation: rotate 1.5s forwards ease-in-out;
+  [class*=btn-glitch-]:hover, [class*=btn-glitch-]:focus {
+    animation-name: glitch;
+    animation-duration: 0.2s;
+    background-color: #5CF6C3;
+    color: #181818;
+    border: 1px solid #5CF6C3;
   }
-
-  @keyframes rotate {
-    0% {
-      transform: rotate(20deg);
-    }
-
-    25% {
-      transform: rotate(0deg);
-    }
-
-    50% {
-      transform: rotate(0deg);
-      margin-bottom: 51px;
-    }
-
-    100% {
-      transform: rotate(0deg);
-      margin-bottom: 25px;
-    }
+  [class*=btn-glitch-]:hover .text-decoration, [class*=btn-glitch-]:focus .text-decoration {
+    animation-name: blink;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
   }
-
-  @-webkit-keyframes rotate {
-    0% {
-      transform: rotate(20deg);
-    }
-
-    25% {
-      transform: rotate(0deg);
-    }
-
-    50% {
-      transform: rotate(0deg);
-      margin-bottom: 51px;
-    }
-
-    100% {
-      transform: rotate(0deg);
-      margin-bottom: 25px;
-    }
+  [class*=btn-glitch-]:hover .decoration, [class*=btn-glitch-]:focus .decoration {
+    animation-name: blink;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
   }
-
-  @-ms-keyframes rotate {
-    0% {
-      transform: rotate(20deg);
-    }
-
-    25% {
-      transform: rotate(0deg);
-    }
-
-    50% {
-      transform: rotate(0deg);
-      margin-bottom: 51px;
-    }
-
-    100% {
-      transform: rotate(0deg);
-      margin-bottom: 25px;
-    }
-  }
-
-  @-moz-keyframes rotate {
-    0% {
-      transform: rotate(20deg);
-    }
-
-    25% {
-      transform: rotate(0deg);
-    }
-
-    50% {
-      transform: rotate(0deg);
-      margin-bottom: 51px;
-    }
-
-    100% {
-      transform: rotate(0deg);
-      margin-bottom: 25px;
-    }
-  }
-
-  @-o-keyframes rotate {
-    0% {
-      transform: rotate(20deg);
-    }
-
-    25% {
-      transform: rotate(0deg);
-    }
-
-    50% {
-      transform: rotate(0deg);
-      margin-bottom: 51px;
-    }
-
-    100% {
-      transform: rotate(0deg);
-      margin-bottom: 25px;
-    }
-  }
-
-  .green_lines-animation {
+  [class*=btn-glitch-]:hover :before, [class*=btn-glitch-]:focus :before {
+    content: " ";
+    width: 15px;
+    border: 1px solid #181818;
     position: absolute;
-    top: 20%;
-    z-index: 0;
+    right: 25%;
+    bottom: 3px;
+    transform: rotate(35deg);
   }
-
-  .green_lines-animation > span.empty {
-    animation: empty 1.5s ease-in-out forwards;
-    -webkit-animation: empty 1.5s forwards ease-in-out;
-    -ms-animation: empty 1.5s forwards ease-in-out;
-    -moz-animation: empty 1.5s forwards ease-in-out;
-    -o-animation: empty 1.5s forwards ease-in-out;
-  }
-
-  @keyframes empty {
-    0% {
-      transform: rotate(20deg);
-    }
-
-    25% {
-      transform: rotate(0deg);
-    }
-
-    50% {
-      transform: rotate(0deg);
-      margin-bottom: 80px;
-    }
-
-    100% {
-      transform: rotate(0deg);
-      margin-bottom: 70px;
-    }
-  }
-
-  .last-line {
-    margin-bottom: 25px;
-    padding-left: 10px;
-  }
-
-  /* ============ project title animation ============*/
-
-  .title-project {
-    font-size: .7em;
-    line-height: 17px;
-    margin-bottom: 25px;
-    padding-left: 20px;
-  }
-
-  .title_project_animation {
-    opacity: 0;
-    animation: opacity .5s ease forwards;
-    -webkit-animation: opacity .5s forwards ease;
-    -ms-animation: opacity .5s forwards ease;
-    -moz-animation: opacity .5s forwards ease;
-    -o-animation: opacity .5s forwards ease;
-    animation-delay: 1s;
-    -webkit-animation-delay: 1s;
-    -ms-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    -o-animation-delay: 1s;
-  }
-
-  @keyframes opacity {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }
-
-  .button-work {
+  [class*=btn-glitch-]:hover :after, [class*=btn-glitch-]:focus :after {
+    animation-name: shrink;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    content: " ";
+    width: 75%;
+    border: 1px solid #181818;
     position: absolute;
-    bottom: 10px;
+    left: 0;
+    bottom: 5px;
+  }
+  [class*=btn-glitch-]:active {
+    background: none;
+    color: #5CF6C3;
+    }
+  [class*=btn-glitch-]:active .text-decoration {
+    animation-name: none;
+  }
+  [class*=btn-glitch-]:active .decoration {
+    animation-name: none;
+  }
+  [class*=btn-glitch-]:active :before, [class*=btn-glitch-]:active :after {
     display: none;
   }
 
-  .green_lines_footer {
-    margin-bottom: 20px;
+  @keyframes glitch {
+    25% {
+      background-color: red;
+      transform: translateX(-10px);
+      letter-spacing: 10px;
+    }
+    35% {
+      background-color: green;
+      transform: translate(10px);
+    }
+    59% {
+      opacity: 0;
+    }
+    60% {
+      background-color: blue;
+      transform: translate(-10px);
+      filter: blur(5px);
+    }
+    100% {
+      background-color: #5CF6C3;
+      blur: 5px;
+    }
   }
-  
-  /* ============ clients logo ============*/
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes shrink {
+    100% {
+      width: 10%;
+    }
+  }
+
+  /* =================================
+        WORK
+  ===================================*/
+
+  .preview, .tableHeader{
+    display: none;
+  } 
+
+  .grid_layout{
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .list_projects{
+    grid-column: 1/9;
+  }
+
+  .detailListItem{
+    padding: 20px 0;
+  }
+
+  .AccordionlistItem{
+    text-align: left;
+    row-gap: 8px;
+    column-gap: 4px;
+  }
+
+  .ListItem_date{
+    grid-column: 1/4;
+  }
+
+  .ListItem_title{
+    grid-column: 1/9;
+    padding-bottom: 8px;
+  }
+
+  .tag_ListItem{
+    grid-column: 1/9;
+    grid-row: 3;
+  }
+
+  .smallcaps_Text{
+    font-size: 0.7em;
+  }
+
+  .clients_logo{
+    row-gap: 32px;
+    column-gap: 44px;
+  }
+
+  .clients_logo img:first-child{
+    grid-column: 1/4;
+  }
+
+  .clients_logo img:nth-child(2){
+    grid-column: 4/8;
+  }
+  .clients_logo img:nth-child(3){
+    grid-column: 1/4;
+  }
+
+  .clients_logo img:nth-child(4){
+    grid-column: 4/8;
+  }
+  .clients_logo img:nth-child(5){
+    grid-column: 1/4;
+  }
+
+  .clients_logo img:nth-child(6){
+    grid-column: 4/8;
+  }
+  .clients_logo img:nth-child(7){
+    grid-column: 1/4;
+  }
+
+  .clients_logo img:nth-child(8){
+    grid-column: 4/7;
+  }
 
   .clients{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 20px;
-  }
-  
-  .clients img{
-    width: 15%;
-    padding: 0 20px 20px 0;
+  padding-bottom: 5rem;
   }
 
-  /*.clients img:nth-child(7){
-    width: 4%;
+  .clients_logo img{
+    width: 80%;
   }
-  .clients img:nth-child(8){
-    width: 12%;
-  }*/
 
   /* ============ project page ============*/
 
-  .main_pic_project {
-    width: 70%;
-    position: relative;
-    top: 20vh;
-    left: 50%;
-    transform: translateX(-50%);
+  #smooth-content{
+    padding: 0 16px;
+  }
+
+  .Project_header{
+    margin: 8rem 0;
+  }
+
+  h3{
+    font-size: 3em;
+    margin-left: 0;
+  }
+
+  .left_details{
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .project_title{
+    align-items: flex-start;
+  }
+
+  .sub{
+    font-size: 1.1em;
+  }
+
+  .details{
+    font-size: .8em;
+  }
+
+  .project_description{
+    margin: 10rem 0 2rem 0;
+  }
+
+  .project_txt{
+    margin: 0 0 0 28px;
+    font-size: .9em;
+    line-height: 24px;
+  }
+
+  h5{
+    font-size: .9em;
+  }
+
+  .description_mockup{
+    width: 90%;
+    top: 70rem;
+    left: -20%;
+  }
+
+  .left_item-hubfun{
+    top: 55rem;
+  }
+
+  .project_about, .project_objective{
+    margin-bottom: 180px;
+  }
+
+  .project_objective h5, .project_objective .project_txt{
+    padding: 0 20px;
+  }
+
+  .images {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+
+  .spacer {
+    height: 90vh;
   }
 
   .title_page_project {
@@ -502,76 +480,18 @@ WORK
 
   }
 
-  .project_text {
-    padding-right: 50px;
-    margin-left: 30px;
-    max-width: 400px;
-  }
-
   .chip-container{
     margin: 10px 30px 40px 30px;
   }
 
-  .chip {
-    font-size: .7em;
-    margin-top: 5px;
-  }
-
   .chip_small{
     margin-top: 0;
+  }
 }
 
-  .link_project {
-    margin: 30px 0 50px 30px;
-  }
-
-  .mockup {
-    width: 80%;
-    margin-bottom: 60px;
-    position: relative;
-    filter: drop-shadow(0px 2px 15px rgba(54, 54, 54, 0.5));
-  }
-  
-  .mobile-mockup{
-    width: 100%;
-  }
-
-  .back_project {
-    position: relative;
-    bottom: 15px;
-    width: 100%;
-    padding: 0;
-    font-weight: 300;
-    display: block;
-  }
-  
-  .next-project{
-    text-align: right;
-  }
-  
-  .prev-project{
-    text-align: left;
-  }
-  
-  .thin{
-    font-size: .6em;
-    color: #636363;
-  }
-  
-  .nav_project{
-    padding: 0 20px;
-    display: flex;
-  }
-  
-  .print_margin{
-    margin-bottom: 50px;
-  }
-
-}
-
-/* =================================
+/* ==================================================
 MOBILE 360PX
-===================================*/
+====================================================*/
 
 @media screen and (min-width:360px) {
   .home-name {
@@ -579,59 +499,44 @@ MOBILE 360PX
     margin-bottom: 25px;
   }
 
-  .title-project{
-    font-size: .8em;
+  .mode_mobile{
+    margin-top: 50px;
   }
 
   .chip_small{
-    font-size: .7em;
+    font-size: 1em;
   }
 
   h1{
+    font-size: 3em;
     line-height: 50px;
   }
 
   h4{
     margin-top: 3em;
-    line-height: 1.5em;
+    line-height: 1.8em;
+  }
+
+ .project_about{
+    margin-bottom: 18rem;
   }
 
   .title_page_project{
     margin: 170px 0 5px 10px;
   }
 
+  .spacer{
+    height: 80vh;
+  }
 }
 
-/* =================================
+/* ==================================================
 MOBILE 375PX
-===================================*/
+====================================================*/
 
 @media screen and (min-width:375px) {
   .home-name {
     margin-top: 30px;
-  }
-
-  .title-project, .clients {
-    padding-left: 30px;
-  }
-
-  .back_project {
-    padding: 0;
-  }
-
-  .project_text,
-  .chip-container {
-    margin-left: 40px;
-  }
-}
-
-/* =================================
-MOBILE 390PX
-===================================*/
-
-@media screen and (min-width:390px) {
-  .title_page_project{
-    margin: 200px 0 5px 10px;
   }
 
   h1{
@@ -639,18 +544,83 @@ MOBILE 390PX
     line-height: 55px;
   }
 
+  .clients_logo{
+    row-gap: 44px;
+    column-gap: 48px;
+  }
+}
+
+/* ==================================================
+MOBILE 384PX
+====================================================*/
+
+@media screen and (min-width:384px) and (max-height:640px) {
+  .home_title{
+    top: 18%;
+  }
+
+  h1{
+    font-size: 3.2em;
+    line-height: 55px;
+  }
+}
+
+/* ==================================================
+MOBILE 390PX
+====================================================*/
+
+@media screen and (min-width:390px) {
+  .title_page_project{
+    margin: 200px 0 5px 10px;
+  }
+
   h4{
     font-size: 1.1em;
   }
 
+   .clients_logo{
+    row-gap: 32px;
+  }
+
+  .clients_logo img:first-child{
+    grid-column: 1/3;
+  }
+
+  .clients_logo img:nth-child(2){
+    grid-column: 3/6;
+  }
+  .clients_logo img:nth-child(3){
+    grid-column: 6/8;
+  }
+
+  .clients_logo img:nth-child(4){
+    grid-column: 1/3;
+  }
+  .clients_logo img:nth-child(5){
+    grid-column: 3/6;
+  }
+
+  .clients_logo img:nth-child(6){
+    grid-column: 6/9;
+  }
+  .clients_logo img:nth-child(7){
+    grid-column: 1/3;
+  }
+
+  .clients_logo img:nth-child(8){
+    grid-column: 3/5;
+  }
+
+  .clients_logo img {
+        width: 100%;
+    }
 }
 
-/* =================================
+/* ==================================================
 MOBILE 411PX
-===================================*/
+====================================================*/
 
 @media screen and (min-width:411px) {
-
   .home-name {
     margin-top: 23px;
     width: 340px;
@@ -658,6 +628,7 @@ MOBILE 411PX
 
   h4{
     font-size: 1.25em;
+    line-height: 1.8em;
   }
 
   .text {
@@ -665,39 +636,42 @@ MOBILE 411PX
     line-height: 32px;
   }
 
-  .logo {
-    width: 40px;
+  .navbar ul {
+    font-size: 1em;
   }
 
-  .navbar ul {
-    font-size: 1.9em;
-    margin-top: 5%;
+  .navbar ul li {
+    padding: 8px 0;
   }
 
   #consolequeries {
     bottom: 100px;
   }
 
-  .title-project {
-    font-size: .8em;
-  }
-
-  .chip {
-    font-size: .8em;
-  }
-
   .chip_small{
-    font-size: .7em;
+    font-size: 1em;
   }
   
-  .clients img{
-    width: 20%;
+  .ListItem_title{
+    font-size: 1.5em;
+  }
+
+  .smallcaps_Text{
+    font-size: .8em;
+  }
+
+  .detailListItem{
+    padding: 28px 0;
+  }
+
+   .project_about{
+    margin-bottom: 20rem;
   }
 }
 
-/* =================================
+/* ==================================================
 MOBILE 430PX
-===================================*/
+====================================================*/
 
 @media screen and (min-width:430px) {
   h1 {
@@ -710,9 +684,9 @@ MOBILE 430PX
   }
 }
 
-/* =================================
+/* ==================================================
 MOBILE 480PX
-===================================*/
+====================================================*/
 
 @media screen and (min-width:480px) {
   .home-name {
@@ -725,15 +699,11 @@ MOBILE 480PX
   }
 
   .navbar ul {
-    font-size: 2.5em;
+    font-size: 1.2em;
   }
 
   .navbar ul li {
     padding: 15px 0;
-  }
-
-  .radio_button {
-    width: 40px;
   }
 
   .text {
@@ -741,113 +711,113 @@ MOBILE 480PX
     line-height: 38px;
   }
 
-  .title-project {
-    font-size: 1em;
-  }
-
   .title_page_project {
     margin: 200px 0 5px 10px;
   }
-
-  .main_pic_project {
-    width: 90%;
-  }
-
-  .chip-container {
-    margin-top: 10px;
-  }
-
-  .last_mockup {
-    margin-bottom: 100px;
-  }
-
-  .back_project {
-    bottom: 30px;
-  }
-
-  .nav_project{
-    padding: 0 30px;
-  }
 }
 
-
-/* =================================
+/* ==================================================
 TABLETTE 540PX
-===================================*/
+====================================================*/
 
 @media screen and (min-width:540px) {
-
-  .lines {
-    margin-top: -200px;
-  }
-
   .home-name {
     margin-top: 12px;
   }
 
+  .logo_mobile img{
+    width: 20%;
+  }
+
   h1{
-    font-size: 5em;
-    line-height: 70px;
+    font-size: 3.8em;
+    line-height: 68px;
   }
 
   h4{
-    margin-top: 1em;
+    margin-top: 3em;
     font-size: 1.25em;
-    line-height: 1.3em;
+    line-height: 1.7em;
   }
 
   .navbar ul {
-    margin-top: -10%;
+    font-size: 1em;
+  }
+
+  .grid_layout{
+    margin-top: 10%;
+  }
+
+   .clients_logo img:first-child{
+    grid-column: 1/3;
+  }
+
+  .clients_logo img:nth-child(2){
+    grid-column: 3/5;
+  }
+  .clients_logo img:nth-child(3){
+    grid-column: 5/7;
+  }
+
+  .clients_logo img:nth-child(4){
+    grid-column: 7/9;
+  }
+  .clients_logo img:nth-child(5){
+    grid-column: 1/3;
+  }
+
+  .clients_logo img:nth-child(6){
+    grid-column: 3/5;
+  }
+  .clients_logo img:nth-child(7){
+    grid-column: 5/7;
+  }
+
+  .clients_logo img:nth-child(8){
+    grid-column: 7/9;
+  }
+
+  .description_mockup{
+    width: 70%;
+  }
+
+  .spacer{
+    height: 70vh;
   }
 
   footer{
     padding-bottom: 12px;
   }
-
-  /* =============== contact ==============*/
-
-  .contact-mail {
-    width: 30%;
-    left: 31%;
-    top: 30%;
-  }
-
-  .contact-github {
-    width: 35%;
-    left: 48%;
-    top: 52%;
-  }
-
-  .contact-linkedin {
-    width: 45%;
-    top: 59%;
-    left: 3%;
-  }
-
 }
 
-/* =================================
+/* ==================================================
 TABLETTE 768PX
-===================================*/
+====================================================*/
 
 @media screen and (min-width:768px) {
   /* ============ home ============ */
-
-  #hamburger-button {
-    width: 50px;
-    height: 50px;
-    margin-top: 35px;
+  #burger {
+    display: none;
+  }
+  
+  .desktop-menu{
+    display: block;
   }
 
-  #hamburger-button > span {
-    width: 50px;
-    height: 5px;
-    margin-bottom: 10px;
+  .mode {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 250;
   }
 
-  .radio_button {
-    left: 40px;
-    top: 35px;
+  .logo_desktop{
+    display: block;
+  }
+
+  .logo_mobile{
+    display: none;
   }
 
   .home-name {
@@ -857,7 +827,7 @@ TABLETTE 768PX
   }
 
   h1 {
-    font-size: 7em;
+    font-size: 5.5em;
     line-height: 90px;
   }
 
@@ -867,29 +837,12 @@ TABLETTE 768PX
     margin-top: 2em;
   }
 
-  #hamburger-button.open > span:first-child {
-    transform: translateY(15px) rotate(45deg);
+  .button{
+    margin-bottom: 20px;
   }
 
-  #hamburger-button.open > span:last-child {
-    transform: translateY(-15px) rotate(-45deg)
-  }
-
-  .navbar ul {
-    font-size: 3em;
-  }
-
-  .navbar ul li {
-    padding: 25px 0;
-  }
-
-  .logo {
-    width: 65px;
-    top: 25px;
-  }
-
-  .radio_button {
-    width: 50px;
+  .home_title{
+    top: 32%;
   }
 
   /* ============ about ============ */
@@ -905,57 +858,62 @@ TABLETTE 768PX
 
   /* ============ work ============ */
 
-  .title-project {
-    font-size: 1.3em;
-    padding-left: 40px;
-    margin-bottom: 40px;
+  .grid_layout{
+    grid-template-columns: repeat(16, 1fr);
   }
 
-  .last-line {
-    padding-left: 40px;
+  .list_projects{
+    grid-column: 1/17;
   }
 
-  @keyframes rotate {
-    0% {
-      transform: rotate(20deg);
-    }
-
-    25% {
-      transform: rotate(0deg);
-    }
-
-    50% {
-      transform: rotate(0deg);
-      margin-bottom: 61px;
-    }
-
-    100% {
-      transform: rotate(0deg);
-      margin-bottom: 40px;
-    }
+  .detailListItem{
+    padding: 40px 0;
   }
 
-  @keyframes empty {
-    0% {
-      transform: rotate(20deg);
-    }
-
-    25% {
-      transform: rotate(0deg);
-    }
-
-    50% {
-      transform: rotate(0deg);
-      margin-bottom: 100px;
-    }
-
-    100% {
-      transform: rotate(0deg);
-      margin-bottom: 90px;
-    }
+  .ListItem_title{
+    grid-column: 1/17;
+    padding-bottom: 12px;
   }
 
-  .main_pic_project {
+  .tag_ListItem{
+    grid-column: 1/17;
+  }
+
+  .clients_logo{
+    row-gap: 32px;
+    column-gap: 44px;
+  }
+
+  .clients_logo img:first-child{
+    grid-column: 1/4;
+  }
+
+  .clients_logo img:nth-child(2){
+    grid-column: 4/8;
+  }
+  .clients_logo img:nth-child(3){
+    grid-column: 8/11;
+  }
+
+  .clients_logo img:nth-child(4){
+    grid-column: 11/14;
+  }
+  .clients_logo img:nth-child(5){
+    grid-column: 1/4;
+  }
+
+  .clients_logo img:nth-child(6){
+    grid-column: 4/8;
+  }
+  .clients_logo img:nth-child(7){
+    grid-column: 8/11;
+  }
+
+  .clients_logo img:nth-child(8){
+    grid-column: 11/14;
+  }
+
+  .clients_logo img {
     width: 80%;
   }
 
@@ -963,59 +921,33 @@ TABLETTE 768PX
     margin: 200px 0 10px 20px;
   }
 
-  .project_text,
-  .chip-container {
-    margin-left: 60px;
-    max-width: 600px;
-  }
-
-  .chip {
-    font-size: 1em;
-  }
-
   .chip_small{
     font-size: .8em;
   }
 
-  .back_project {
-    padding: 0;
-  }
-
-  .last_mockup {
-    margin-bottom: 140px;
-  }
-  
-    .back_project p{
-    margin: 8px 0;
-  }
-  
   .thin{
     font-size: .8em;
   }
 
-  .clients{
-    padding-left: 40px;
+  .work_footer{
+    bottom: 0;
   }
-  
-  .clients img{
-   padding: 0 30px 30px 0;
+
+  .description_mockup{
+    width: 60%;
+    left: -15%;
+  }
+
+  .project_txt{
+    padding: 0 40px;
   }
 }
 
-/* =================================
+/* ==================================================
 TABLETTE 1024PX
-===================================*/
+====================================================*/
 
 @media screen and (min-width:1024px) {
-
-   #burger,
-  .logo {
-    display: none;
-  }
-  
-  .desktop-menu, .logo_desktop, .mobile-lines{
-    display: block;
-  }
 
   /* =============== home ==============*/
 
@@ -1023,19 +955,12 @@ TABLETTE 1024PX
     width: 40%;
   }
 
-  .button{
-    font-size: 1.5em;
-  }
-
-  .bottom-name{
-    font-size: .5em;
-  }
-
   .home-name {
-   width: 55%;
-    margin-top: 30px;
+    width: 50%;
+    margin-top: 80px;
     margin-bottom: 20px;
     opacity: 1;
+    right: 12%;
   }
 
   h1{
@@ -1046,25 +971,13 @@ TABLETTE 1024PX
   h4{
     font-size: 1.1em;
   }
-  
-  .lines {
-    margin-top: -400px;
-  }
-  
+
   .navbar ul {
     font-size: 4.3em;
   }
 
   .navbar ul li {
     padding: 35px 0;
-  }
-
-  .logo_desktop{
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 50px;
-    z-index: 400;
   }
   
   /* =============== about ==============*/
@@ -1079,182 +992,96 @@ TABLETTE 1024PX
     bottom: 230px;
   }
 
-  /* =============== contact ==============*/
-
-  .contact-mail {
-    width: 27%;
-    left: 32%;
-  }
-
-  .contact-github {
-    width: 31%;
-    left: 49%;
-  }
-
-  .contact-linkedin {
-    width: 39%;
-  }
-
   /* =============== work ==============*/
-
-  .title-project {
-    font-size: 1.5em;
-    padding-left: 120px;
-    margin-bottom: 60px;
-  }
-
-  @keyframes rotate {
-    0% {
-      transform: rotate(20deg);
-    }
-
-    25% {
-      transform: rotate(0deg);
-    }
-
-    50% {
-      transform: rotate(0deg);
-      margin-bottom: 81px;
-    }
-
-    100% {
-      transform: rotate(0deg);
-      margin-bottom: 60px;
-    }
-  }
-
-  @keyframes empty {
-    0% {
-      transform: rotate(20deg);
-    }
-
-    25% {
-      transform: rotate(0deg);
-    }
-
-    50% {
-      transform: rotate(0deg);
-      margin-bottom: 140px;
-    }
-
-    100% {
-      transform: rotate(0deg);
-      margin-bottom: 130px;
-    }
-  }
 
   .title_page_project {
     margin: 300px 0 20px 0;
   }
 
-  .project_text,
-  .chip-container {
-    margin-left: 120px;
-    max-width: 700px;
-  }
-
-  .back_project {
-    padding: 0;
-  }
-
-  .main_pic_project{
-    width: 75%;
-  }
-  
-  .back_project p{
-    margin: 15px 0;
-    font-size: .8em;
-  }
-  
-  .nav_project{
-    padding: 0 50px;
-  }
-  
-  .clients img{
-  width: 10%;
-  }
-  
-  .clients{
-    padding-left: 120px;
-    padding-bottom: 20px;
+  .images{
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-@media screen and (min-width:1024px) and (min-height:1360px) {
+@media screen and (min-width:1024px) and (max-height:1366px) {
   .home_title{
-    width: 50%;
+    width: 60%;
+    top: 42%;
   }
 
   .home-name{
+    width: 60%;
     right: 10%;
+    margin-top: -10%;
   }
 
   h1{
     font-size: 5.5em;
-    line-height: 75px;
+    line-height: 85px;
     margin-bottom: 12px;
   }
 
   h4{
     font-size: 1.5em;
+    line-height: 1.8em;
   }
 
   p{
     font-size: 1.1em;
   }
+
+  .preview, .tableHeader{
+    display: none;
+  } 
+
+    .list_projects{
+    grid-column: 1/25;
+  }
+
+  .detailListItem{
+    padding: 32px 0;
+  }
+
+  .ListItem_title{
+    grid-column: 1/25;
+  }
+
+  .tag_ListItem{
+    grid-column: 1/25;
+  }
 }
 
-/* =================================
+/* ==================================================
 DESKTOP 1100PX
-===================================*/
+====================================================*/
 
 @media screen and (min-width:1100px) {
 
   /* =============== home ==============*/
-  .mobile-lines, #burger,
-  .logo, #consolequeries {
+  #burger,
+   #consolequeries {
     display: none;
   }
   
-  .desktop-lines, .desktop-menu, .logo_desktop, #console, .pic_project, .scroll {
+  .desktop-menu, #console, .pic_project, .scroll {
     display: block;
-  }
-
-  .desktop-lines{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .bg-lines-desktop, .bg-lines-desktop-green {
-    width: 100%;
-  }
-  
-  .radio_button{
-    right: 40px;
-    left: inherit;
-    width: 40px;
   }
 
   h1{
     font-size: 5.5em;
-    line-height: 75px;
+    line-height: 85px;
+    margin-bottom: 12px;
   }
 
-  .home-name{
-    margin-top: 20px;
-    top: 0;
-  }
-  
-  .bottom-name{
-    font-size: .8em;
-
+  p, h4{
+    font-size: 1.2em;
+    line-height: 1.7em;
   }
 
   .home_title{
     width: 80%;
-    bottom: 15%;
+    bottom: 10%;
+    left: 16px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -1267,162 +1094,92 @@ DESKTOP 1100PX
   .right{
     width: 20%;
   }
-
-  .logo_desktop{
-    position: relative;
-    top: 150px;
-    left: 70%;
-    width: 3%;
-    z-index: 400;
-  }
   
   .text{
     font-size: 1.2em;
     line-height: 40px;
   }
   
-  .chip {
-    font-size: .8em;
-  }
-  
-  /* =============== contact ==============*/
-
-  .contact_link{
-    transform: rotate(-6deg);
-  }
-  
-  .contact-mail{
-    width: 18%;
-    left: 40%;
-    top: 25%;
-  }
-  
-  .contact-github{
-    width: 21%;
-  }
-  
-  .contact-linkedin{
-    width: 28%;
-    left: 10%;
-    top: 41%;
-  }
-  
   /* =============== work ==============*/
-  .green_lines-animation{
-    top: 20%;
-  }
-  
-  .title_project_animation{
-    display: inline-block;
-  }
-  
-  .title-project{
-    font-size: 1.1em;
-    padding-left: 150px;
-    margin-bottom : 40px;
-  }
-  
-  .title_page_project{
-    margin: 300px 0 20px -50px;
+
+   .grid_layout{
+    grid-template-columns: repeat(24, 1fr);
+    margin-top: 15%;
   }
 
-  @keyframes rotate {
-    0% {
-      transform: rotate(20deg);
-    }
+  .preview, .tableHeader{
+      display: grid ;
+    } 
 
-    25% {
-      transform: rotate(0deg);
-    }
-
-    50% {
-      transform: rotate(0deg);
-      margin-bottom: 61px;
-    }
-
-    100% {
-      transform: rotate(0deg);
-      margin-bottom: 40px;
-    }
+  .list_projects{
+      grid-column: 8 / 25;
   }
 
-  @keyframes empty {
-    0% {
-      transform: rotate(20deg);
-    }
-
-    25% {
-      transform: rotate(0deg);
-    }
-
-    50% {
-      transform: rotate(0deg);
-      margin-bottom: 110px;
-    }
-
-    100% {
-      transform: rotate(0deg);
-      margin-bottom: 100px;
-    }
-  }
-  
-  .last-line{
-    padding-left: 150px;
-  }
-  
-  .pic_project{
-    position: absolute;
-    width: 40%;
-    margin-top: -180px;
-    z-index: 333;
-    left: 50%;
-    opacity: 0;
-    cursor: default;
-    transition: all .3s ease;
-  }
-  
-.title_project_animation:hover ~ .pic_project{
-    opacity: 1;
-  }
-  
-  .main_pic_project{
-    width: 40%;
-    left: 70%;
-    top: 25vh;
+  .tableHeader_list{
+      grid-column: 1 / 19;
   }
 
-  .project_text, .chip-container{
-    margin-left: 100px;
+  .tableLabel-date{
+      grid-column: 1/3;
   }
-  
-  .presentation{
-    position: relative;
-    max-width: 600px;
-    left: 50px;
-    top: -400px;
+
+  .tableLabel-name{
+      grid-column: 3/13;
   }
-  
-  .last_mockup{
-    margin-bottom: 60px;
+
+  .tableLabel-type{
+      grid-column: 13/18;
   }
-  
-  .anim{
-    top: -180px;
+
+  .detailListItem{
+    padding: 20px 0;
   }
-  
-  .anim .card.midd{
-    width: 45%;
-}
-  
-  .back_project{
-    padding: 0;
-    font-size: .8em;
+
+  .ListItem_date{
+    grid-column: 1/3;
   }
-  
-  .back_project p{
-    margin: 3px 0;
+
+  .ListItem_title{
+    grid-column: 3/12;
+    padding-bottom: 0;
+    font-size: 1.2em;
   }
-  
+
+  .tag_ListItem{
+    grid-column: 13/18;
+    grid-row: 1;
+  }
+
+  .clients_logo{
+      column-gap: 32px;
+      row-gap: 12px;
+  }
+
+  .clients_logo img:first-child{
+      grid-column: 1 / 3;
+  }
+  .clients_logo img:nth-child(2){
+      grid-column: 3 / 5;
+  }
+  .clients_logo img:nth-child(3){
+      grid-column: 5 / 7;
+  }
+  .clients_logo img:nth-child(4){
+      grid-column: 7 / 9;
+  }
+  .clients_logo img:nth-child(5){
+      grid-column: 9 / 11;
+  }
+  .clients_logo img:nth-child(6){
+      grid-column: 11 / 13;
+  }
+  .clients_logo img:nth-child(7){
+      grid-column: 13 / 15;
+  }
+  .clients_logo img:nth-child(8){
+      grid-column: 15 / 17;
+  }
+
   .scroll{
     position: absolute;
     left: 50%;
@@ -1437,30 +1194,104 @@ DESKTOP 1100PX
   .opacity{
     opacity: 0;
   }
-  
-  .clients{
-    padding-left: 150px;
+
+  #smooth-content {
+    padding: 0px 90px;
   }
+
+  .Project_header {
+    margin: 10rem 0px;
+  }
+
+  .project_title{
+    align-items: flex-end;
+  }
+
+  .left_details{
+    flex-direction: row;
+  }
+
+  .project_description {
+    margin: 20rem 0 2rem 0;
+  }
+
+  h5, .project_txt{
+    font-size: 1em;
+    line-height: 28px;
+  }
+
+  h3{
+    font-size: 4em;
+  }
+
+  .sub{
+    font-size: 1.3em;
+  }
+
+  .details{
+    font-size: 1em;
+  }
+  .description_mockup{
+    width: 55%;
+  }
+
+  .project_txt{
+    margin: 0 40px;
+    padding: 0;
+  }
+
+  .back{
+      font-size: 1em;
+    }
 }
 
-/* =================================
+/* ==================================================
 DESKTOP 1438PX
-===================================*/
+====================================================*/
 
 @media screen and (min-width:1438px) {
-  .clients img{
-    width: 100px;
-    padding: 0 60px 20px 0;
-  }
   h1{
     font-size: 6.25em;
-    line-height: 85px;
+    line-height: 1em;
+  }
+
+  p, h4{
+    font-size: 1.4em;
+  }
+
+  .Project_header {
+      margin: 15rem 0px;
+  }
+
+  .spacer{
+    height: 50vh;
+  }
+
+  .nav_project{
+    padding: 5rem 0;
+  }
+
+  .sub{
+    font-size: 1.8em;
+    line-height: 1.3em;
+  }
+
+  h3{
+    font-size: 5em;
+  }
+
+  .description_mockup{
+    top: 60rem;
+  }
+
+  .back{
+    margin: 22px;
   }
 }
 
-/* =================================
+/* ==================================================
 DESKTOP 1512PX
-===================================*/
+====================================================*/
 
 @media screen and (min-width:1512px) {
   #contact-button{
@@ -1471,290 +1302,261 @@ DESKTOP 1512PX
     bottom: 150px;
   }
 
-  .title-project{
-    font-size: 1.4em;
-    padding-left: 150px;
+  .desktop-menu{
+    top: 40px;
+    left: 40px;
   }
-  
+
+  .mode{
+    top: 40px;
+    right: 40px;
+  }
+
+  .back{
+    margin: 40px;
+  }
+
+  .home_title{
+    left: 40px;
+  }
+
+  .logo_desktop{
+    width: 200px;
+  }
+
   .title_page_project{
     margin: 300px 0 20px 0;
-  }
-  
-  .title-project{
-    margin-bottom : 60px;
-  }
-
-  @keyframes rotate {
-    0% {
-      transform: rotate(20deg);
-    }
-
-    25% {
-      transform: rotate(0deg);
-    }
-
-    50% {
-      transform: rotate(0deg);
-      margin-bottom: 90px;
-    }
-
-    100% {
-      transform: rotate(0deg);
-      margin-bottom: 60px;
-    }
-  }
-
-  @keyframes empty {
-    0% {
-      transform: rotate(20deg);
-    }
-
-    25% {
-      transform: rotate(0deg);
-    }
-
-    50% {
-      transform: rotate(0deg);
-      margin-bottom: 140px;
-    }
-
-    100% {
-      transform: rotate(0deg);
-      margin-bottom: 120px;
-    }
   }
 
   .text{
     font-size: 1.4em;
     line-height: 40px;
   }
-  
-  .chip{
-    font-size: 1.2em;
-  }
 
-  .chip_small{
-    font-size: 1em;
-    padding: 6px 12px;
-  }
-  
-  .last-line{
-    padding-left: 150px;
-    margin-bottom: 60px;
-  }
-  
-  .project_text, .chip-container{
-    margin-left: 150px;
-  }
-  
-  .presentation{
-    max-width: 700px;
-    top: -400px;
-  }
-  
-  .back_project{
-    padding: 0;
-    font-size: 1.1em;
-  }
-  
-    .back_project p{
-    margin: 10px 0;
-  }
-  
-  .nav_project{
-    padding: 0 80px;
-  }
+  .clients{
+  padding-bottom: 10rem;
+  margin: 12rem 0;
+  } 
 }
 
-/* =================================
+/* ==================================================
 DESKTOP 1727PX
-===================================*/
+====================================================*/
 
 @media screen and (min-width:1727px) {
   h1{
     font-size: 7.5em;
     line-height: 105px;
   }
+
+  h2{
+    font-size: 4.5em;
+  }
+
+  p, h4{
+    font-size: 1.6em;
+  }
+
+  .clients{
+    padding-bottom: 10rem;
+    margin: 14rem 0;
+  }
+
+  #smooth-content {
+    padding: 0px 160px;
+  }
+
+  .description_mockup{
+    width: 50%;
+    top: 80rem;
+  }
 }
 
-/* =================================
+/* ==================================================
 DESKTOP 1920PX
-===================================*/
+====================================================*/
 
 @media screen and (min-width:1920px) {
   h1{
     font-size: 7.5em;
     line-height: 105px;
   }
+
+  .grid_layout{
+    margin-top: 10%;
+  }
+
+  #smooth-content {
+    padding: 0px 200px;
+  } 
+
+  .description_mockup{
+    left: -10%;
+  }
 }
 
-/* =================================
+/* ==================================================
 DESKTOP 2500PX
-===================================*/
+====================================================*/
 
 @media screen and (min-width:2500px) {  
   .button {
-    font-size: 3em;
-  }
-  .bottom-name {
-    font-size: .8em;
+    margin-bottom: 30px;
   }
 
+  .bottom-name {
+    font-size: .7em;
+  }
+
+  .home-name{
+    width: 50%;
+    top:0;
+  }
+  
   h1{
     font-size: 10em;
-    line-height: 140px;
+    line-height: 150px;
   }
 
-  p{
-    font-size: 1.5em;
+  h2{
+    font-size: 5em;
   }
 
-  h4{
-    font-size: 1.8em;
+  p, h4{
+    font-size: 2em;
   }
 
   #contact-button{
     top: 40px;
   }
-  
+  .grid_layout{
+  margin-top: 8%;
+  }
+
+  .clients_logo{
+    column-gap: 80px;
+  }
+
+  .clients{
+    margin: 20rem 0;
+  }
+
   .text{
     font-size: 2em;
     line-height: 60px;
   }
-  
-  .chip{
-    font-size: 1.5em;
+
+  .smallcaps_Text {
+    font-size: 1em;
   }
-  
+
   .chip_small{
-    padding: 8px 20px;
-  }
-
-  .title-project{
-    font-size: 1.8em;
-    padding-left: 200px;
-    margin-bottom : 70px;
-  }
-
-  @keyframes rotate {
-    0% {
-      transform: rotate(20deg);
-    }
-
-    25% {
-      transform: rotate(0deg);
-    }
-
-    50% {
-      transform: rotate(0deg);
-      margin-bottom: 110px;
-    }
-
-    100% {
-      transform: rotate(0deg);
-      margin-bottom: 70px;
-    }
-  }
-
-  @keyframes empty {
-    0% {
-      transform: rotate(20deg);
-    }
-
-    25% {
-      transform: rotate(0deg);
-    }
-
-    50% {
-      transform: rotate(0deg);
-      margin-bottom: 140px;
-    }
-
-    100% {
-      transform: rotate(0deg);
-      margin-bottom: 140px;
-    }
-  }
-  
-  .last-line{
-    margin-bottom: 70px;
-    padding-left: 200px;
-  }
-  
-  .project_text, .chip-container{
-    margin-left: 200px;
-  }
-  
-  .presentation{
-    max-width: 850px;
-    top: -500px;
-    left: 150px;
+    font-size: .8em;
+    padding: 8px 12px;
   }
   
   .scroll img{
     width: 60px;
   }
   
-  .back_project{
-    padding: 0;
+  #smooth-content {
+    padding: 0px 300px;
   }
-  
-   .back_project p{
-    margin: 15px 0;
-     font-size: .8em;
+
+  .description_mockup{
+    width: 40%;
   }
-  
-  .nav_project{
-    padding: 0 100px;
+
+  .project_description {
+  margin: 20rem 30% 2rem 0;
   }
-  
-  .radio_button{
-    width: 60px;
-  }
-  
-  .clients{
-    padding-left: 200px;
-  }
-  
-  .clients img{
-    width: 150px;
+
+  .project_footer{
+    padding-top: 0;
   }
 }
 
-/* =================================
+/* ==================================================
 DESKTOP 3840PX
-===================================*/
+====================================================*/
 
 @media screen and (min-width: 3840px) {
+  .desktop-menu{
+    top: 80px;
+    left: 80px;
+  }
+
+  .logo_desktop{
+    width: 400px;
+  }
+
   .button{
-    font-size: 4.5em;
+    margin-bottom: 40px;
   }
   
   #contact-button{
     top: 60px;
   }
 
-  h1{
-    font-size: 16em;
-    line-height: 220px;
-  }
-  
-  p{
-    font-size: 2.8em;
+  .home_title{
+    left: 80px;
   }
 
-  h4{
-    font-size: 3em;
+  h1{
+    font-size: 16em;
+    line-height: 230px;
+  }
+
+  h2{
+    font-size: 8em;
+  }
+  
+  p, h4{
+    font-size: 3.3em;
+  }
+
+  .mode{
+    top: 80px;
+    right: 80px;
+  }
+
+  .grid_layout{
+    margin-top: 6%;
+  }
+
+  .projects{
+    row-gap: 80px;
+  }
+
+  .preview{
+    row-gap: 20px;
+  }
+  .tableHeader{
+    padding-bottom: 20px;
+  }
+  .tableLabel{
+    font-size: 1.5em;
+  }
+
+  .ListItem_title{
+    font-size: 2.5em;
+  }
+
+  .detailListItem{
+    padding: 40px 0;
+  }
+
+  .clients{
+    padding-bottom: 10rem;
+    margin: 28rem 0;
+  }
+
+  .clients_logo{
+    column-gap: 120px;
   }
 
   .bottom-name{
-    font-size: 1.5em;
-  }
-  
-  .radio_button{
-    width: 90px;
-    right: 60px;
-    top: 60px;
+    font-size: 1.2em;
   }
   
   #console{
@@ -1767,124 +1569,48 @@ DESKTOP 3840PX
     line-height: 100px;
   }
   
-  .title-project{
-    font-size: 3em;
-    padding-left: 300px;
-    margin-bottom: 100px;
-  }
-  
   .title_page_project{
     margin-bottom: 50px;
   }
-  
-  .last-line{
-    padding-left: 300px;
-  }
-  
-   @keyframes rotate {
-    0% {
-      transform: rotate(20deg);
-    }
 
-    25% {
-      transform: rotate(0deg);
-    }
-
-    50% {
-      transform: rotate(0deg);
-      margin-bottom: 121px;
-    }
-
-    100% {
-      transform: rotate(0deg);
-      margin-bottom: 100px;
-    }
-  }
-
-  @keyframes empty {
-    0% {
-      transform: rotate(20deg);
-    }
-
-    25% {
-      transform: rotate(0deg);
-    }
-
-    50% {
-      transform: rotate(0deg);
-      margin-bottom: 200px;
-    }
-
-    100% {
-      transform: rotate(0deg);
-      margin-bottom: 190px;
-    }
-  }
-  
-  .presentation{
-    max-width: 1400px;
-    top: -700px;
-  }
-  
-  .project_text, .chip-container{
-    margin-left: 300px;
-    max-width: 1400px;
-  }
-  
-  .chip{
-    font-size: 3em;
+  .smallcaps_Text {
+    font-size: 1.3em;
   }
 
   .chip_small{
-    font-size: 2em;
-    padding: 12px 24px;
+    font-size: .9em;
+    padding: 12px 20px;
   }
   
   .scroll img{
     width: 120px;
   }
-  
-  .mockup{
-    margin-bottom: 120px;
+
+  footer{
+    padding-bottom: 40px;
   }
-  
-  .back_project{
-    padding: 0;
+
+  .bottom-name{
+    font-size: 1.3em;
   }
-  
-     .back_project p{
-    margin: 35px 0;
+
+  .description_mockup{
+    width: 35%;
+    left: -10%;
   }
-  
-  .clients{
-    padding-left: 300px;
-  }
-  
-  .clients img{
-    width: 300px;
+
+  .Project_header{
+    margin: 20rem 0px;
   }
 }
 
-/* =================================
+/* ==================================================
 MOBILE 320PX LANDSCAPE
-===================================*/
+====================================================*/
 
 @media screen and (min-width:120px) and (max-height:520px) and (orientation: landscape) {
  
   /* ======================= home ==============*/
-  .mobile-lines{
-    height: 100%;
-  }
-  
-  .lines{
-    height: 150%;
-    width: 120%;
-  }
-  
-  .radio_button{
-    width: 30px;
-  }
-  
   .home-name{
     width: 300px;
     transform: rotate(-12deg);
@@ -1895,22 +1621,20 @@ MOBILE 320PX LANDSCAPE
   }
   
   .bottom-name{
-    font-size: .6em;
+    font-size: .5em;
     bottom: 20px;
   }
   
   .navbar ul{
-    font-size: 1.5em;
-    margin-top: -50%;
+    font-size: .8em;
   }
   
   .navbar ul li{
     padding: 5px 0;
   }
   
-  hr{
-    margin-top: .2em;
-    margin-bottom: .2em;
+  .mode_mobile{
+    margin-top: 20px;
   }
   
   /* ======================= about ==============*/
@@ -1923,46 +1647,11 @@ MOBILE 320PX LANDSCAPE
   #consolequeries{
     bottom: 40px;
   }
-  
-  /* ======================= contact ==============*/
-  
-  .contact_link{
-    transform: rotate(-19deg);
-  }
-  
-  .contact-mail{
-    width: 20%;
-    left: 38%;
-    top: 20%;
-  }
-  
-  .contact-github{
-    width: 25%;
-    left: 56%;
-    top: 42%;
-  }
-  
-  .contact-linkedin{
-    width: 30%;
-    top: 49%;
-    left: 2%;
-  }
-  
-  /* ======================= work ==============*/
-  
-  .main_pic_project{
-    width: 70%;
-    top: 35vh;
-  }
-  
-  .back_project p{
-    font-size: .6em;
-  }
 }
 
-/* =================================
+/* ==================================================
 MOBILE 480PX LANDSCAPE
-===================================*/
+====================================================*/
 
 @media screen and (min-width:480px) and (max-height:320px){
   .home_title{
@@ -1990,32 +1679,32 @@ MOBILE 480PX LANDSCAPE
     right: 10%;
   }
 
-  .navbar ul{
-    margin-top: -45%;
-  }
-
-  .radio_button{
-    width: 25px;
-  }
-  
-  .logo{
-    width: 30px;
-  }
-
   .bottom-name{
     font-size: .4em;
     bottom: 8px;
   }
-  
 }
 
-/* =================================
+/* ==================================================
 MOBILE 640PX LANDSCAPE
-===================================*/
+====================================================*/
 
 @media screen and (min-width:640px) and (max-height:384px){
   .home_title{
-    width: 40%;
+    width: 70%;
+    bottom: 10%;
+    left: 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .left{
+    width: 60%;
+  }
+  
+  .right{
+    width: 22%;
   }
   
   h1{
@@ -2033,37 +1722,46 @@ MOBILE 640PX LANDSCAPE
   }
 
   .home-name{
-    width: 300px;
-    right: 15%;
-  }
-
-  .navbar ul{
-    margin-top: -45%;
-  }
-
-  .radio_button{
-    width: 25px;
+    width: 250px;
+    right: 10%;
   }
   
-  .logo{
-    width: 30px;
+  .description_mockup{
+    width: 60%;
+    left: -15%;
+    top: 40rem;
+  }
+
+  .spacer{
+    height: 100vh;
   }
 
   .bottom-name{
     font-size: .4em;
     bottom: 8px;
   }
-  
 }
 
-
-/* =================================
+/* ==================================================
 MOBILE 700PX LANDSCAPE
-===================================*/
+====================================================*/
 
 @media screen and (min-width:700px) and (max-height:520px) and (orientation: landscape) {
-  .home_title{
-    width: 40%;
+   .home_title{
+    width: 70%;
+    bottom: 10%;
+    left: 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .left{
+    width: 60%;
+  }
+
+  .right{
+    width: 22%;
   }
 
   h1{
@@ -2078,46 +1776,83 @@ MOBILE 700PX LANDSCAPE
   h4{
     font-size: .8em;
     line-height: 1.5em;
+    margin-top: 1.5em;
   }
 
   .home-name{
     opacity: 1;
-  }
-
-  .navbar ul{
-    margin-top: -45%;
-  }
-  
-  .logo{
-    width: 30px;
-  }
-
-  .radio_button{
-    width: 25px;
-  }
-  
-  .chip{
-    font-size: 1em;
+    right: 10%;
   }
   
   .bottom-name{
     font-size: .4em;
     bottom: 8px;
   }
-
 }
 
-/* =================================
-MOBILE 960PX LANDSCAPE
-===================================*/
+/* ==================================================
+MOBILE 720PX LANDSCAPE
+====================================================*/
 
-@media screen and (min-width:960px) and (max-height:600px) and (orientation: landscape) {
-  .home_title{
-    width: 40%;
+@media screen and (min-width:720px) and (max-height:540px) and (orientation: landscape) {
+.home_title{
+    width: 70%;
+    bottom: 10%;
+    left: 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .left{
+    width: 60%;
+  }
+
+  .right{
+    width: 30%;
   }
 
   h1{
-    font-size: 4em;
+  font-size: 2.5em;
+  line-height: 45px;
+  }
+}
+
+/* ==================================================
+MOBILE 882PX LANDSCAPE
+====================================================*/
+
+@media screen and (min-width:882px) and (max-height:344px) and (orientation: landscape) {
+  h1{
+    font-size: 2.3em;
+    line-height: 38px;
+  }
+}
+
+/* ==================================================
+MOBILE 960PX LANDSCAPE
+====================================================*/
+
+@media screen and (min-width:960px) and (max-height:600px) and (orientation: landscape) {
+  .home_title{
+    width: 70%;
+    bottom: 10%;
+    left: 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .left{
+    width: 60%;
+  }
+
+  .right{
+    width: 22%;
+  }
+
+  h1{
+    font-size: 3.8em;
     line-height: 60px;
   }
   
@@ -2131,42 +1866,48 @@ MOBILE 960PX LANDSCAPE
   }
 
   .home-name{
+    width: 42%;
     opacity: 1;
     right: 8%;
+    margin-top: 0;
   }
 
   .navbar ul{
     margin-top: -45%;
   }
-  
-  .logo{
-    width: 30px;
-  }
 
-  .radio_button{
-    width: 25px;
-  }
-  
-  .chip{
-    font-size: 1em;
-  }
-  
   .bottom-name{
     font-size: .4em;
     bottom: 8px;
   }
-
+  
+  .logo_desktop{
+    top: 0;
+  }
 }
 
-/* =================================
+/* ==================================================
 TABLETTE 1024PX LANDSCAPE
-===================================*/
+====================================================*/
 
 @media screen and (min-width:1000px) and (max-height:768px) and (orientation: landscape) {
-    .back_project p{
-    font-size: .6em;
+  .home_title{
+    width: 70%;
+    bottom: 10%;
+    left: 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
   }
-  
+
+  .left{
+    width: 60%;
+  }
+
+  .right{
+    width: 22%;
+  }
+
   .text{
     font-size: 1.2em;
     line-height: 40px;
