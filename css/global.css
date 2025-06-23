@@ -426,6 +426,10 @@ a{
     width: 45px;
 }
 
+.off_svg{
+    display: none;
+}
+
 .star{
     transition: all .5s ease;
 }
