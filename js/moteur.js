@@ -124,7 +124,7 @@ $(function () {
     /* ======================================= 
                 KEYDOWN 
     ========================================== */
-    var show = ['Hello', 'there', '!', '<br>', "I am", 'Cindy', 'Castano,', '<br>', 'an', "UI Designer", '&', "Graphic", "designer", 'based', 'in', 'Paris.', '<br>', 'Passionate', 'about', 'visual', "design", 'and', 'user', "experience,", '<br>', 'I', 'combine', 'creativity', "and", 'technical', 'expertise', 'to', 'bring', 'intuitive', 'and', 'aesthetic', 'interfaces', 'to', 'life.', '<br>', "Let's", 'get', 'in', 'touch', 'for', 'any', 'project', 'inquiries', '<br>', '>>', '<a href="mailto:hello@freakitty.cc" style="color:#5CF6C3">Just drop me a line</a>', '.'],
+    var show = ['Hello', 'there', '!', '<br>', "I am", 'Cindy', 'Castano,', '<br>', 'an', "UI Designer", '&', "Graphic", "designer", 'based', 'in', 'Paris.', '<br>', 'Passionate', 'about', 'visual', "design", 'and', 'user', "experience,", '<br>', 'I', 'combine', 'creativity', "and", 'technical', 'expertise', 'to', 'bring', 'intuitive', 'and', 'aesthetic', 'interfaces', 'to', 'life.', '<br>', "Let's", 'get', 'in', 'touch', 'for', 'any', 'project', 'inquiries', '<br>', '>>', '<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#102;&#114;&#101;&#97;&#107;&#105;&#116;&#116;&#121;&#46;&#102;&#114;" style="color:#5CF6C3">Just drop me a line</a>', '.'],
         i = 0,
         updateHey = function () {
             if (i < show.length) {
